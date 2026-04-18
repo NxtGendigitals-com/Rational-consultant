@@ -1,6 +1,7 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 
-function InfoItem({ Icon, title, value }) {
+function InfoItem({ icon, title, value }) {
+  const Icon = icon;
   return (
     <div className="flex items-start gap-3 rounded-[18px] border border-white/10 bg-white/6 px-4 py-4 backdrop-blur-sm">
       <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-[14px] bg-white/12 text-white">
@@ -36,17 +37,17 @@ export default function ContactHeroOverlaySection({
 
             <div className="mt-8 space-y-4">
               <InfoItem
-                Icon={MapPin}
+                icon={MapPin}
                 title="Office"
                 value="Idgah Hills, Bhopal, Madhya Pradesh"
               />
               <InfoItem
-                Icon={Mail}
+                icon={Mail}
                 title="Email"
                 value="info@rationalconsultant.in / support@rationalconsultant.in"
               />
               <InfoItem
-                Icon={Phone}
+                icon={Phone}
                 title="Call"
                 value="+91 91652 27984 / +91 93290 22013"
               />

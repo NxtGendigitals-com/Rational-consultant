@@ -1,71 +1,41 @@
-import {
-  BadgeCheck,
-  Building2,
-  CircleParking,
-  DraftingCompass,
-  House,
-  MapPinned,
-} from "lucide-react";
+import { Building2 } from "lucide-react";
 
 const defaultSteps = [
   {
-    title: "900+ projects all over the world",
-    text: "We have delivered interiors and lifestyle-driven spaces across the world with detailed design direction.",
+    title: "Consultation & Requirement Review",
+    text: "We begin by understanding your project type, documentation stage, and the exact approvals or legal support you need.",
   },
   {
-    title: "Bespoke Design Tailored to You",
-    text: "We shape every layout, finish, and atmosphere around your needs, goals, and visual identity.",
+    title: "Document Planning & Preparation",
+    text: "Our team organizes the required papers, identifies missing records, and prepares a clear file flow for smooth submission.",
   },
   {
-    title: "From Sketch to Launch, We're With You",
-    text: "We guide through every step, from planning and approvals to the final delivery experience.",
+    title: "Submission, Liaison & Final Follow-up",
+    text: "We coordinate with relevant authorities, monitor progress, and stay involved until the required outcome is completed.",
   },
 ];
 
-const defaultFeatureIcons = [
-  { label: "Residence", Icon: House, active: false },
-  { label: "Parking", Icon: CircleParking, active: false },
-  { label: "Planning", Icon: DraftingCompass, active: false },
-  { label: "Location", Icon: MapPinned, active: false },
-  { label: "Luxury", Icon: BadgeCheck, active: true },
+const defaultStats = [
+  { value: "20+", label: "Years" },
+  { value: "1000+", label: "Files" },
+  { value: "MP-Wide", label: "Reach" },
 ];
-
-function FeatureIcon({ Icon, label, active }) {
-  return (
-    <div className="flex min-w-[58px] flex-col items-center gap-2 text-center">
-      <div
-        className={`flex h-9 w-9 items-center justify-center rounded-full ${
-          active ? "bg-[#0c1630] text-white" : "bg-[#eef3f8] text-[#5f6f85]"
-        }`}
-      >
-        <Icon size={17} strokeWidth={2.1} />
-      </div>
-      <span
-        className={`text-size-11 font-medium ${
-          active ? "text-[#0c1630]" : "text-[#8e97a7]"
-        }`}
-      >
-        {label}
-      </span>
-    </div>
-  );
-}
 
 export default function WorkProcessSection({
   className = "",
-  titleStart = "Our work process make",
-  titleHighlight = "your dream true",
-  imageSrc = "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80",
-  imageAlt = "Luxury interior lounge",
+  titleStart = "Our process makes",
+  titleHighlight = "approvals simpler",
+  imageSrc = "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80",
+  imageAlt = "Documentation and planning session",
   steps = defaultSteps,
-  featureIcons = defaultFeatureIcons,
+  stats = defaultStats,
 }) {
   return (
     <section className={`bg-white py-20 sm:pt-20 sm:pb-8 ${className}`}>
       <div className="mx-auto max-w-[1500px] px-4 sm:px-6 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-[0.92fr_1.08fr] lg:items-center lg:gap-16">
           <div>
-            <div className="overflow-hidden rounded-[2px] border border-[#eceef3] bg-[#f7f8fb] shadow-[0_16px_34px_rgba(15,23,42,0.08)]">
+            <div className="overflow-hidden rounded-[20px] border border-[#eceef3] bg-[#f7f8fb] shadow-[0_16px_34px_rgba(15,23,42,0.08)]">
               <img
                 src={imageSrc}
                 alt={imageAlt}
@@ -73,9 +43,15 @@ export default function WorkProcessSection({
               />
             </div>
 
-            <div className="mt-5 flex flex-wrap items-center gap-x-6 gap-y-4 pl-2">
-              {featureIcons.map((item) => (
-                <FeatureIcon key={item.label} {...item} />
+            <div className="mt-5 flex flex-wrap items-center gap-4 pl-1">
+              {stats.map((stat) => (
+                <div
+                  key={stat.label}
+                  className="flex items-center gap-2 rounded-[12px] border border-[#e2e8f0] bg-[#f8fbfd] px-4 py-2.5"
+                >
+                  <span className="text-size-16 font-semibold text-[#123f72]">{stat.value}</span>
+                  <span className="text-size-12 font-medium uppercase tracking-[0.14em] text-[#8e97a7]">{stat.label}</span>
+                </div>
               ))}
             </div>
           </div>
@@ -89,7 +65,7 @@ export default function WorkProcessSection({
                 </h2>
               </div>
 
-              <div className="hidden rounded-2xl bg-[#f4f7fb] p-3 text-[#7b8497] lg:flex">
+              <div className="hidden rounded-2xl bg-[#eef4fb] p-3 text-[#123f72] lg:flex">
                 <Building2 size={22} />
               </div>
             </div>

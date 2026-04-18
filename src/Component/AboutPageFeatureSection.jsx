@@ -8,7 +8,7 @@ const defaultFeatures = [
   },
   {
     title: "End-To-End Approval Support",
-    text: "From initial review to authority submission and final follow-up, our team manages each stage with clarity and consistency.",
+    text: "From initial review to authority submission and final follow-up, our team manages each stage with clarity and consistency. We map responsibilities, reduce back-and-forth, and keep your file progress visible so decision-making stays smooth and predictable.",
     Icon: FileCheck2,
   },
   {
@@ -28,11 +28,11 @@ export default function AboutPageFeatureSection({
   features = defaultFeatures,
 }) {
   return (
-    <section className={`bg-[#f8fbfd] py-18 sm:pt-20 sm:pb-12 ${className}`}>
+    <section className={`bg-[#f8fbfd] py-16 sm:py-20 ${className}`}>
       <div className="mx-auto max-w-[1500px] px-4 sm:px-6 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:gap-14  ">
           <div className="relative sm:h-[420px] lg:h-[700px]">
-            <div className="overflow-hidden rounded-[28px] border border-[#dce5f2] bg-white shadow-[0_24px_54px_rgba(12,20,36,0.08)]">
+            <div className="overflow-hidden rounded-[28px] border border-[#dce5f2] bg-white shadow-[0_10px_24px_rgba(12,20,36,0.06)]">
               <img
                 src={imageSrc}
                 alt={imageAlt}
@@ -40,7 +40,7 @@ export default function AboutPageFeatureSection({
               />
             </div>
 
-            <div className="absolute bottom-6 left-6 rounded-[20px] bg-[#123f72] px-6 py-5 text-white shadow-[0_18px_40px_rgba(18,63,114,0.26)]">
+            <div className="absolute bottom-6 left-6 rounded-[20px] bg-[#123f72] px-6 py-5 text-white shadow-[0_8px_20px_rgba(18,63,114,0.2)]">
               <div className="flex items-center gap-4">
                 <div className="flex h-12 w-12 items-center justify-center rounded-[14px] bg-white/12">
                   <Building2 size={22} />
@@ -62,7 +62,7 @@ export default function AboutPageFeatureSection({
               {eyebrow}
             </p>
 
-            <h2 className="mt-4 text-size-36 font-semibold leading-[1] tracking-[-0.05em] text-[#172033] sm:text-size-46 lg:text-size-40">
+            <h2 className="mt-4 text-size-36 font-semibold leading-none tracking-[-0.05em] text-[#172033] sm:text-size-40 lg:text-size-46">
               {title}
             </h2>
 
@@ -70,14 +70,14 @@ export default function AboutPageFeatureSection({
               {description}
             </p>
 
-            <div className="mt-5 space-y-4">
+            <div className="mt-6 space-y-4">
               {features.map((feature) => {
                 const Icon = feature.Icon;
 
                 return (
                   <div
                     key={feature.title}
-                    className="rounded-[22px] border border-[#e2e8f0] bg-white px-5 py-5 shadow-[0_10px_22px_rgba(15,23,42,0.04)]"
+                    className="border-b border-[#dce2ec] py-4 last:border-b-0"
                   >
                     <div className="flex items-start gap-4">
                       <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-[14px] bg-[#eef4fb] text-[#123f72]">

@@ -5,22 +5,23 @@ import {
   Phone,
 } from "lucide-react";
 import { FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 import logoLandscape from "../assets/logo_no_bg.png";
 
 const defaultExploreLinks = [
-  { label: "Design List", href: "/about" },
-  { label: "Builders List", href: "/services" },
-  { label: "Properties List", href: "/residence" },
-  { label: "Agent Connect List", href: "/why-choose-us" },
-  { label: "Tourism List", href: "/contact" },
+  { label: "Home", href: "/" },
+  { label: "About Us", href: "/about" },
+  { label: "Services", href: "/services" },
+  { label: "Why Choose Us", href: "/why-choose-us" },
+  { label: "Testimonials", href: "/testimonials" },
 ];
 
 const defaultCompanyLinks = [
-  { label: "FAQs", href: "/faq" },
-  { label: "Terms & Conditions", href: "/terms" },
-  { label: "Privacy Policy", href: "/privacy" },
-  { label: "Help", href: "/help" },
-  { label: "Services", href: "/services" },
+  { label: "Contact Us", href: "/contact" },
+  { label: "Consultation", href: "/contact" },
+  { label: "Documentation Support", href: "/services" },
+  { label: "Client Reviews", href: "/testimonials" },
+  { label: "Our Process", href: "/why-choose-us" },
 ];
 
 const defaultSocialLinks = [
@@ -36,12 +37,12 @@ function FooterLinkColumn({ title, links }) {
       <ul className="mt-4 space-y-3">
         {links.map((link) => (
           <li key={link.label}>
-            <a
-              href={link.href}
+            <Link
+              to={link.href}
               className="text-size-13 text-[#afc0d6] transition hover:text-white"
             >
               + {link.label}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
@@ -52,7 +53,7 @@ function FooterLinkColumn({ title, links }) {
 export default function FooterSection({
   className = "",
   brandName = "Rational Consultants",
-  introTitle = "I Want To Hear From You Please Contact Me!",
+  introTitle = "Let us support your project documentation journey.",
   email = "info@rationalconsultant.in",
   websiteLabel = "www.rationalconsultant.in",
   address = "Idgah Hills, Bhopal, Madhya Pradesh",
@@ -91,13 +92,13 @@ export default function FooterSection({
 
         <div className="grid gap-10 pt-10 lg:grid-cols-[1.2fr_0.9fr_0.9fr_0.8fr]">
           <div>
-            <div className="inline-flex rounded-[16px]  px-4 py-3 ">
+            <Link to="/" className="inline-flex rounded-[16px] px-4 py-3">
               <img
                 src={logoSrc}
                 alt={brandName}
                 className="h-14 w-auto object-contain"
               />
-            </div>
+            </Link>
 
             <p className="mt-5 max-w-[320px] text-size-13 leading-6 text-[#b5c4d8]">
               Trusted property documentation and liaison experts for building

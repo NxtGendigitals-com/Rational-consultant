@@ -1,23 +1,25 @@
+import { ArrowRight } from "lucide-react";
+
 const defaultProjects = [
   {
-    title: "Commercials",
-    count: "200+ projects",
+    title: "Building Permissions",
+    count: "400+ projects",
     image:
-      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80",
     size: "large",
   },
   {
-    title: "Residential",
-    count: "450+ projects",
+    title: "Property Documentation",
+    count: "350+ projects",
     image:
-      "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=80",
     size: "small",
   },
   {
-    title: "Kitchen",
+    title: "NOC & Liaison",
     count: "300+ projects",
     image:
-      "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80",
     size: "small",
   },
 ];
@@ -30,7 +32,7 @@ function ProjectCard({ title, count, image, size = "small" }) {
 
   return (
     <div
-      className={`group relative overflow-hidden rounded-[2px] bg-slate-200 shadow-[0_18px_42px_rgba(15,23,42,0.12)] ${sizeClass}`}
+      className={`group relative overflow-hidden rounded-[20px] bg-slate-200 shadow-[0_18px_42px_rgba(15,23,42,0.12)] ${sizeClass}`}
     >
       <img
         src={image}
@@ -52,11 +54,11 @@ function ProjectCard({ title, count, image, size = "small" }) {
 
 export default function ProjectSection({
   className = "",
-  titleStart = "900+ Projects All",
-  titleHighlight = "Over the World",
-  description = "From New York to Tokyo, our portfolio spans continents and cultures. Our team brings tailored design solutions to a variety of spaces, always with a focus on quality and innovation.",
-  buttonLabel = "Read More",
-  buttonHref = "/projects",
+  titleStart = "1000+ Cases Handled",
+  titleHighlight = "Across Madhya Pradesh",
+  description = "From building permissions and NOC applications to property documentation and legal compliance — our team delivers reliable results across residential and commercial projects.",
+  buttonLabel = "Our Services",
+  buttonHref = "/services",
   projects = defaultProjects,
 }) {
   const [featured, upper, lower] = projects;
@@ -65,24 +67,22 @@ export default function ProjectSection({
     <section className={`bg-white py-20 sm:pt-20 sm:pb-5 ${className}`}>
       <div className="mx-auto max-w-[1500px] px-4 sm:px-6 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-[0.72fr_1.28fr] lg:items-center lg:gap-14">
-          <div className="max-w-[300px]">
+          <div className="lg:max-w-[300px]">
             <h2 className="text-size-36 font-semibold leading-[0.96] tracking-[-0.05em] text-[#121826] sm:text-size-44 lg:text-size-52">
               <span className="block">{titleStart}</span>
               <span className="block text-[#123f72]">{titleHighlight}</span>
             </h2>
 
-            <p className="mt-6 max-w-[250px] text-size-13 leading-6 text-[#7e8695] sm:text-size-14">
+            <p className="mt-6 text-size-13 leading-6 text-[#7e8695] sm:text-size-14 lg:max-w-[250px]">
               {description}
             </p>
 
             <a
               href={buttonHref}
-              className="mt-6 inline-flex items-center gap-2 rounded-[2px] bg-[#0c2c71] px-4 py-2.5 text-size-12 font-semibold text-[#ffffff]  transition hover:bg-[#0c2c71]"
+              className="mt-6 inline-flex items-center gap-2 rounded-[12px] bg-[#123f72] px-5 py-2.5 text-size-13 font-semibold text-white transition hover:bg-[#0f3460]"
             >
               {buttonLabel}
-              <span className="inline-flex h-5 w-5 items-center justify-center rounded-full  text-size-12">
-                →
-              </span>
+              <ArrowRight size={15} />
             </a>
           </div>
 
@@ -94,15 +94,6 @@ export default function ProjectSection({
                 <ProjectCard {...upper} />
                 <ProjectCard {...lower} />
               </div>
-            </div>
-
-            <div className="mt-5 flex items-center justify-center gap-3">
-              <div className="h-[2px] w-16 bg-[#0c1630]" />
-              <span className="text-size-28 font-semibold leading-none tracking-[-0.04em] text-[#161c27]">
-                1
-              </span>
-              <span className="text-size-16 font-medium text-[#1c2431]">2</span>
-              <span className="text-size-16 font-medium text-[#8f96a4]">3</span>
             </div>
           </div>
         </div>

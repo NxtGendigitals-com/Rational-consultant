@@ -31,4 +31,8 @@
   --text-size-60: 3.75rem;
   --text-size-72: 4.5rem;
   --text-size-74: 4.625rem;
+  --text-display-lg: clamp(2rem, 5vw, 3.5rem);
+  --text-display-md: clamp(1.75rem, 4.2vw, 3rem);
+  --text-title-lg: clamp(1.5rem, 3.3vw, 2.25rem);
+  --text-body-lg: clamp(0.95rem, 1.4vw, 1.125rem);
 }

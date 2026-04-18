@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import logoLandscape from "../assets/logo_no_bg.png";
@@ -16,13 +16,12 @@ export default function Navbar({
   links = defaultLinks,
   brandName = "Rational Real Estate & Liaising",
   className = "",
-  ctaLabel = "GET NOW",
+  ctaLabel = "CONTACT US",
   ctaHref = "/contact",
   logoSrc = logoLandscape,
   activeHref,
 }) {
   const [open, setOpen] = useState(false);
-  const navigate = useNavigate();
   const currentHref =
     activeHref ?? (typeof window !== "undefined" ? window.location.pathname : "/");
 
@@ -45,11 +44,6 @@ export default function Navbar({
     }
 
     return currentHref === href || currentHref.startsWith(`${href}/`);
-  };
-
-  const handleNavClick = (href) => {
-    navigate(href);
-    setOpen(false);
   };
 
   return (
@@ -91,7 +85,7 @@ export default function Navbar({
               <div className="flex items-center gap-3">
                 <Link
                   to={ctaHref}
-                  className="rounded-full bg-[#0c2c71] px-6 py-3 text-size-10 font-extrabold tracking-[0.28em] text-white transition hover:bg-[#122042]"
+                  className="rounded-full bg-[#123f72] px-6 py-3 text-size-10 font-extrabold tracking-[0.28em] text-white transition hover:bg-[#0f3460]"
                 >
                   {ctaLabel}
                 </Link>
@@ -176,7 +170,7 @@ export default function Navbar({
             <Link
               to={ctaHref}
               onClick={() => setOpen(false)}
-              className="mt-4 block rounded-full bg-[#0c2c71] px-4 py-3 text-center text-size-12 font-bold tracking-[0.24em] text-white transition hover:bg-[#123981]"
+              className="mt-4 block rounded-full bg-[#123f72] px-4 py-3 text-center text-size-12 font-bold tracking-[0.24em] text-white transition hover:bg-[#0f3460]"
             >
               {ctaLabel}
             </Link>

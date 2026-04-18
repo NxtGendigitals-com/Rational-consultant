@@ -23,7 +23,7 @@ export default function Testimonials() {
   return (
     <main className="overflow-hidden bg-[#f7f8fc] text-slate-900">
       <section
-        className="relative overflow-hidden px-4 pb-16 pt-32 text-white sm:px-6 lg:px-8 lg:pb-20 lg:pt-40"
+        className="relative overflow-hidden px-4 pb-12 pt-28 text-white sm:px-6 lg:px-8 lg:pb-16 lg:pt-32"
         style={{
           backgroundImage:
             "linear-gradient(180deg, rgba(12, 22, 48, 0.86) 0%, rgba(18, 63, 114, 0.9) 100%), url('https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1600&q=80')",
@@ -34,19 +34,19 @@ export default function Testimonials() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(61,130,245,0.22),transparent_34%)]" />
         <div className="absolute -left-24 bottom-[-80px] h-72 w-72 rounded-full bg-white/6 blur-3xl" />
         <div className="mx-auto max-w-[1500px]">
-          <div className="max-w-[980px] rounded-[28px] border border-white/10 bg-white/6 px-6 py-8 shadow-[0_24px_54px_rgba(3,10,24,0.24)] backdrop-blur-sm sm:px-8 sm:py-10 lg:px-10 lg:py-12">
+          <div className="max-w-[980px] rounded-[28px] border border-white/10 bg-white/6 px-6 py-7 shadow-[0_10px_24px_rgba(3,10,24,0.18)] backdrop-blur-sm sm:px-8 sm:py-8 lg:px-10 lg:py-10">
             <p className="text-size-12 font-semibold uppercase tracking-[0.24em] text-[#d6e4ff]">
               Testimonials
             </p>
-            <h1 className="mt-4 max-w-[900px] text-size-42 font-semibold leading-[0.96] tracking-[-0.05em] sm:text-size-56 lg:text-size-72">
+            <h1 className="mt-4 max-w-[860px] text-size-34 font-semibold leading-[1.02] tracking-[-0.04em] sm:text-size-46 lg:text-size-56">
               Hear What Our Clients Say About Working With Rational Consultants
             </h1>
-            <p className="mt-6 max-w-[760px] text-size-16 leading-8 text-[#d8e3f6]">
+            <p className="mt-5 max-w-[760px] text-size-15 leading-7 text-[#d8e3f6]">
               From property documentation to approvals and liaison services, our
               clients trust us for reliable support, clear guidance, and
               professional handling at every stage of the process.
             </p>
-            <div className="mt-8 flex flex-wrap gap-4">
+            <div className="mt-6 flex flex-wrap gap-3">
               <a
                 href="#testimonials-list"
                 className="inline-flex items-center justify-center rounded-[12px] bg-white px-6 py-3.5 text-size-15 font-semibold text-[#123f72] transition hover:bg-[#eef4fb]"
@@ -59,7 +59,7 @@ export default function Testimonials() {
       </section>
      <WhatMakesUsDifferentSection />
       <WorkProcessSection
-        className="bg-white py-20 sm:pt-0 sm:pb-8"
+        className="bg-white"
         titleStart="How clients experience"
         titleHighlight="our process"
         imageSrc="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80"
@@ -67,7 +67,7 @@ export default function Testimonials() {
         steps={testimonialJourneySteps}
       />
       <div id="testimonials-list">
-        <Testomonial className="bg-[#fffdfd]" />
+        <Testomonial className="bg-white" />
       </div>
 
 

@@ -4,33 +4,33 @@ import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 const defaultTestimonials = [
   {
     quote:
-      "Our team collaboration improved dramatically. Everyone is on the same page, making decisions faster and with more confidence. It felt magic.",
-    name: "James Rodriguez",
-    role: "CTO, ScaleUp Inc",
+      "Rational Consultants handled our building permission from start to finish. The documentation was accurate, the follow-up was consistent, and we faced no delays. Highly professional team.",
+    name: "Rajesh Verma",
+    role: "Property Developer, Bhopal",
     image:
       "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=160&q=80",
   },
   {
     quote:
-      "It was skeptical at first, but Datalory proved itself in the first week. The ROI is undeniable. We've never going back to the old ways.",
-    name: "Lisa Kowalski",
-    role: "Head of Marketing, GrowthCo",
+      "We had a complex NOC requirement that other consultants couldn't resolve. Rational Consultants mapped the exact process, handled the departmental submission, and got it cleared efficiently.",
+    name: "Priya Sharma",
+    role: "Commercial Project Owner, MP",
     image:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=160&q=80",
   },
   {
     quote:
-      "Finally, a platform that actually delivers on its promises. Clean interface, powerful features, and expert support whenever we need it.",
-    name: "David Nguyen",
-    role: "Founder, StartupHub",
+      "Their property documentation review saved us from a title dispute before finalizing our purchase. Thorough, well-structured, and genuinely helpful guidance at every step.",
+    name: "Amit Joshi",
+    role: "Residential Buyer, Bhopal",
     image:
       "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=160&q=80",
   },
   {
     quote:
-      "From the first consultation to the final handover, the process felt smooth, premium, and deeply professional. We genuinely enjoyed every step.",
-    name: "Maria Bennett",
-    role: "Property Investor",
+      "From consultation to final approval, the entire TNCP process was handled without us needing to follow up repeatedly. That reliability is what we needed and exactly what we got.",
+    name: "Sunita Mehta",
+    role: "Builder & Investor, Indore",
     image:
       "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=160&q=80",
   },
@@ -38,15 +38,15 @@ const defaultTestimonials = [
 
 const defaultStats = [
   { value: "4.9/5", label: "Client Rating" },
-  { value: "10K+", label: "Happy Residents" },
-  { value: "98%", label: "Satisfaction Rate" },
-  { value: "500+", label: "Project Reviews" },
+  { value: "1000+", label: "Files Handled" },
+  { value: "98%", label: "Success Rate" },
+  { value: "500+", label: "Happy Clients" },
 ];
 
 function TestimonialCard({ quote, name, role, image }) {
   return (
-    <article className="h-full rounded-[18px] border border-[#efe5e4] bg-white p-5 ">
-      <div className="flex items-center gap-1 text-[#1a2230]">
+    <article className="h-full rounded-[20px] border border-[#efe5e4] bg-white p-5">
+      <div className="flex items-center gap-1 text-[#f59e0b]">
         {Array.from({ length: 5 }).map((_, index) => (
           <Star key={index} size={13} fill="currentColor" strokeWidth={0} />
         ))}
@@ -58,7 +58,7 @@ function TestimonialCard({ quote, name, role, image }) {
         <img
           src={image}
           alt={name}
-          className="h-10 w-10 rounded-full object-cover ring-2 ring-[#f3e1de]"
+          className="h-10 w-10 rounded-full object-cover ring-2 ring-[#eef4fb]"
         />
         <div>
           <p className="text-size-13 font-semibold text-[#1d2534]">{name}</p>
@@ -89,18 +89,16 @@ export default function Testomonial({
   };
 
   return (
-    <section
-      className={` py-20 sm:pt-24 sm:pb-5 ${className}`}
-    >
+    <section className={`py-20 sm:pt-24 sm:pb-5 ${className}`}>
       <div className="mx-auto max-w-[1500px] px-4 sm:px-6 lg:px-8">
         <div className="flex items-end justify-between gap-6">
           <div>
-            <p className="text-size-12 font-semibold uppercase tracking-[0.22em] text-[#2446a8]">
+            <p className="text-size-12 font-semibold uppercase tracking-[0.22em] text-[#123f72]">
               Testimonials
             </p>
             <h2 className="mt-3 text-size-34 font-semibold leading-[0.98] tracking-[-0.05em] text-[#1a2230] sm:text-size-40 lg:text-size-48">
-              Trusted by clients who
-              <span className="block text-[#27406b]">value premium living</span>
+              Trusted by property owners &
+              <span className="block text-[#123f72]">developers across Madhya Pradesh</span>
             </h2>
           </div>
 
@@ -109,7 +107,7 @@ export default function Testomonial({
               type="button"
               aria-label="Previous testimonial"
               onClick={() => scrollToIndex(activeIndex - 1)}
-              className="flex h-11 w-11 items-center justify-center rounded-full border border-[#e6d9d7] bg-white text-[#2446a8] transition hover:border-[#2446a8] "
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-[#e2e8f0] bg-white text-[#123f72] transition hover:border-[#123f72]"
             >
               <ChevronLeft size={18} />
             </button>
@@ -117,7 +115,7 @@ export default function Testomonial({
               type="button"
               aria-label="Next testimonial"
               onClick={() => scrollToIndex(activeIndex + 1)}
-              className="flex h-11 w-11 items-center justify-center rounded-full border border-[#e6d9d7] bg-white text-[#2446a8] transition hover:border-[#2446a8] "
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-[#e2e8f0] bg-white text-[#123f72] transition hover:border-[#123f72]"
             >
               <ChevronRight size={18} />
             </button>
@@ -146,7 +144,7 @@ export default function Testomonial({
             type="button"
             aria-label="Previous testimonial"
             onClick={() => scrollToIndex(activeIndex - 1)}
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-[#e6d9d7] bg-white text-[#2446a8]"
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-[#e2e8f0] bg-white text-[#123f72]"
           >
             <ChevronLeft size={16} />
           </button>
@@ -154,13 +152,13 @@ export default function Testomonial({
             type="button"
             aria-label="Next testimonial"
             onClick={() => scrollToIndex(activeIndex + 1)}
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-[#e6d9d7] bg-white text-[#2446a8]"
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-[#e2e8f0] bg-white text-[#123f72]"
           >
             <ChevronRight size={16} />
           </button>
         </div>
 
-        <div className="mt-10 grid grid-cols-2 gap-5 border-t border-[#efe4e2] pt-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid grid-cols-2 gap-5 border-t border-[#e2e8f0] pt-8 lg:grid-cols-4">
           {stats.map((stat) => (
             <div key={stat.label} className="text-center">
               <p className="text-size-34 font-semibold leading-none tracking-[-0.05em] text-[#1a2230]">

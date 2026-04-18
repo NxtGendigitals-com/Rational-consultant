@@ -29,7 +29,7 @@ export default function Contact() {
   return (
     <main className="overflow-hidden bg-[#f7f8fc] text-slate-900">
       <section
-        className="relative overflow-hidden px-4 pb-16 pt-32 text-white sm:px-6 lg:px-8 lg:pb-20 lg:pt-30"
+        className="relative overflow-hidden px-4 pb-12 pt-28 text-white sm:px-6 lg:px-8 lg:pb-16 lg:pt-32"
         style={{
           backgroundImage:
             "linear-gradient(180deg, rgba(12, 22, 48, 0.86) 0%, rgba(18, 63, 114, 0.92) 100%), url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=80')",
@@ -38,7 +38,7 @@ export default function Contact() {
         }}
       >
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(61,130,245,0.22),transparent_34%)]" />
-        <div className="absolute -right-16 top-10 h-72 w-72 rounded-full bg-white/6 blur-3xl" />
+        <div className="absolute -left-24 bottom-[-80px] h-72 w-72 rounded-full bg-white/6 blur-3xl" />
         <div className="mx-auto max-w-[1500px]">
 
 

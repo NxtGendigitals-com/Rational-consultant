@@ -7,7 +7,8 @@ const defaultSocialLinks = [
   { label: "Twitter", href: "https://twitter.com", Icon: FaXTwitter },
 ];
 
-function ContactInfoItem({ Icon, title, lines, accentClass }) {
+function ContactInfoItem({ icon, title, lines, accentClass }) {
+  const Icon = icon;
   return (
     <div className="flex items-start gap-4">
       <div
@@ -37,11 +38,11 @@ export default function ContactSection({
   socialLinks = defaultSocialLinks,
 }) {
   return (
-    <section className={`bg-white py-20 sm:py-24  ${className}`}>
+    <section className={`bg-white py-14 sm:py-16 ${className}`}>
       <div className="mx-auto max-w-[1500px] px-4 sm:px-6 lg:px-8">
         <div className="overflow-hidden rounded-[28px] border border-[#e7ecf3] bg-white ">
           <div className="grid lg:grid-cols-[0.9fr_1.1fr]">
-            <div className="border-b border-[#edf1f6] bg-[#f8fbfd] px-6 py-10 sm:px-8 lg:border-b-0 lg:border-r lg:px-10 lg:py-12">
+            <div className="border-b border-[#edf1f6] bg-[#f8fbfd] px-6 py-8 sm:px-8 lg:border-b-0 lg:border-r lg:px-10 lg:py-9">
               <h2 className="text-size-38 font-semibold tracking-[-0.04em] text-[#172033] sm:text-size-46">
                 {title}
               </h2>
@@ -51,19 +52,19 @@ export default function ContactSection({
 
               <div className="mt-10 space-y-8">
                 <ContactInfoItem
-                  Icon={MapPin}
+                  icon={MapPin}
                   title="Head Office"
                   lines={officeLines}
                   accentClass="bg-gradient-to-br from-[#123f72] to-[#2d5f95]"
                 />
                 <ContactInfoItem
-                  Icon={Mail}
+                  icon={Mail}
                   title="Email Us"
                   lines={emailLines}
                   accentClass="bg-gradient-to-br from-[#3d82f5] to-[#2d72f2]"
                 />
                 <ContactInfoItem
-                  Icon={Phone}
+                  icon={Phone}
                   title="Call Us"
                   lines={phoneLines}
                   accentClass="bg-gradient-to-br from-[#cb3c34] to-[#df635c]"
@@ -91,7 +92,7 @@ export default function ContactSection({
               </div>
             </div>
 
-            <div className="px-6 py-10 sm:px-8 lg:px-10 lg:py-12">
+            <div className="px-6 py-8 sm:px-8 lg:px-10 lg:py-9">
               <h2 className="text-size-34 font-semibold tracking-[-0.04em] text-[#172033] sm:text-size-42">
                 Send us a message
               </h2>
@@ -167,7 +168,7 @@ export default function ContactSection({
 
                 <button
                   type="submit"
-                  className="inline-flex w-full items-center justify-center rounded-full bg-[#243b63] px-6 py-3.5 text-size-15 font-semibold text-white transition hover:bg-[#2c4164]"
+                  className="inline-flex w-full items-center justify-center rounded-full bg-[#123f72] px-6 py-3.5 text-size-15 font-semibold text-white transition hover:bg-[#0f3460]"
                 >
                   Send
                 </button>

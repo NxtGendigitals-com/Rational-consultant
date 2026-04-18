@@ -3,30 +3,30 @@ import { ChevronDown } from "lucide-react";
 
 const defaultFaqs = [
   {
-    question: "What is RationalPay?",
+    question: "Which services do you provide?",
     answer:
-      "RationalPay is an all-in-one financial management platform designed to simplify payments, automate invoicing, track expenses in real-time, and ensure secure transactions for businesses of all sizes.",
+      "We provide building permissions, NOC services, TNCP approvals, property documentation, liaison support, legal consultation, land diversion, Namantaran services, and municipal clearances across Madhya Pradesh.",
   },
   {
-    question: "How does RationalPay work?",
+    question: "How do I start my documentation process?",
     answer:
-      "It centralizes payments, reporting, and workflow automation in one dashboard so teams can manage billing, expenses, and financial operations more efficiently.",
+      "Contact our team via the form, phone, or email. We first review your property type, documentation stage, and approval requirements before recommending the right next steps.",
   },
   {
-    question: "Is RationalPay secure?",
+    question: "Do you support both residential and commercial projects?",
     answer:
-      "Yes. The platform is built with modern security practices, protected payment flows, and access controls to keep sensitive financial data safe.",
+      "Yes. Our services are tailored for residential, commercial, and development-related projects depending on the approval, documentation, and liaison needs.",
   },
   {
-    question: "Can RationalPay integrate with other accounting software?",
+    question: "Can I contact you before my documents are ready?",
     answer:
-      "Yes. It is designed to connect with common accounting and finance tools so your reporting and bookkeeping stay synchronized.",
+      "Yes. In many cases an early consultation is the best first step. We guide you on the exact documents, sequence, and approval path before submission starts.",
   },
 ];
 
 function FAQItem({ item, isOpen, onToggle }) {
   return (
-    <div className="rounded-[22px] border border-[#ebe8f2] bg-[#f7f6fb] px-5 py-5 shadow-[0_10px_24px_rgba(25,20,45,0.04)] sm:px-6">
+    <div className="rounded-[20px] border border-[#e2e8f0] bg-[#f8fbfd] px-5 py-5 shadow-[0_10px_24px_rgba(25,20,45,0.04)] sm:px-6">
       <button
         type="button"
         onClick={onToggle}
@@ -38,16 +38,14 @@ function FAQItem({ item, isOpen, onToggle }) {
             {item.question}
           </h3>
           {isOpen && (
-            <p className="mt-4 max-w-[560px] text-size-14 leading-7 text-[#8a8f9c]">
+            <p className="mt-4 max-w-[560px] text-size-14 leading-7 text-[#667085]">
               {item.answer}
             </p>
           )}
         </div>
 
         <span
-          className={`mt-1 flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-white transition ${
-            isOpen ? "bg-[#123f72]" : "bg-[#2a5c90]"
-          }`}
+          className="mt-1 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#123f72] text-white transition"
         >
           <ChevronDown
             size={18}
@@ -64,7 +62,7 @@ export default function FAQSection({
   eyebrow = "Frequently asked questions",
   titleStart = "Frequently asked",
   titleHighlight = "questions",
-  description = "Choose a plan that fits your business needs and budget. No hidden fees, no surprises, just straightforward pricing for powerful financial management.",
+  description = "Quick answers about our services, how we work, and how clients usually begin the process with us.",
   faqs = defaultFaqs,
 }) {
   const [openIndex, setOpenIndex] = useState(0);
@@ -79,12 +77,12 @@ export default function FAQSection({
               {eyebrow}
             </div>
 
-            <h2 className="mt-8 text-size-40 font-semibold leading-[0.98] tracking-[-0.05em] text-[#1d2230] sm:text-size-50 lg:text-size-60">
+            <h2 className="mt-8 text-size-40 font-semibold leading-[0.98] tracking-[-0.05em] text-[#1d2230] sm:text-size-46 lg:text-size-52">
               <span className="block">{titleStart}</span>
               <span className="block text-[#123f72]">{titleHighlight}</span>
             </h2>
 
-            <p className="mt-8 max-w-[360px] text-size-15 leading-7 text-[#969cab]">
+            <p className="mt-8 max-w-[360px] text-size-15 leading-7 text-[#667085]">
               {description}
             </p>
           </div>
