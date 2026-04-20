@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   ArrowRight,
   Building2,
@@ -363,6 +363,11 @@ const services = [
 
 export default function Services() {
   const [selectedService, setSelectedService] = useState(null);
+
+  useEffect(() => {
+    document.body.style.overflow = selectedService ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [selectedService]);
 
   return (
     <section className="bg-[#f8fbfd] py-20 sm:pt-20 sm:pb-8">
