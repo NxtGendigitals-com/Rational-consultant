@@ -6,7 +6,7 @@ import {
 } from "lucide-react";
 import { FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import logoLandscape from "../assets/logo_no_bg.png";
+import logoLandscape from "../assets/logo_footer.png";
 
 const defaultExploreLinks = [
   { label: "Home", href: "/" },
@@ -96,11 +96,11 @@ export default function FooterSection({
               <img
                 src={logoSrc}
                 alt={brandName}
-                className="h-14 w-auto object-contain"
+                className=" w-[20vh] object-contain"
               />
             </Link>
 
-            <p className="mt-5 max-w-[320px] text-size-13 leading-6 text-[#b5c4d8]">
+            <p className=" max-w-[320px] text-size-13 leading-6 text-[#b5c4d8]">
               Trusted property documentation and liaison experts for building
               permissions, NOCs, municipal clearances, and legal compliance.
             </p>

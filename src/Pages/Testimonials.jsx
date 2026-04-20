@@ -34,25 +34,46 @@ export default function Testimonials() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(61,130,245,0.22),transparent_34%)]" />
         <div className="absolute -left-24 bottom-[-80px] h-72 w-72 rounded-full bg-white/6 blur-3xl" />
         <div className="mx-auto max-w-[1500px]">
-          <div className="max-w-[980px] rounded-[28px] border border-white/10 bg-white/6 px-6 py-7 shadow-[0_10px_24px_rgba(3,10,24,0.18)] backdrop-blur-sm sm:px-8 sm:py-8 lg:px-10 lg:py-10">
-            <p className="text-size-12 font-semibold uppercase tracking-[0.24em] text-[#d6e4ff]">
-              Testimonials
-            </p>
-            <h1 className="mt-4 max-w-[860px] text-size-34 font-semibold leading-[1.02] tracking-[-0.04em] sm:text-size-46 lg:text-size-56">
-              Hear What Our Clients Say About Working With Rational Consultants
-            </h1>
-            <p className="mt-5 max-w-[760px] text-size-15 leading-7 text-[#d8e3f6]">
-              From property documentation to approvals and liaison services, our
-              clients trust us for reliable support, clear guidance, and
-              professional handling at every stage of the process.
-            </p>
-            <div className="mt-6 flex flex-wrap gap-3">
-              <a
-                href="#testimonials-list"
-                className="inline-flex items-center justify-center rounded-[12px] bg-white px-6 py-3.5 text-size-15 font-semibold text-[#123f72] transition hover:bg-[#eef4fb]"
-              >
-                Read Reviews
-              </a>
+          <div className="grid items-start gap-6 lg:grid-cols-2">
+            <div className="rounded-[28px] border border-white/10 bg-white/6 px-6 py-7 shadow-[0_10px_24px_rgba(3,10,24,0.18)] backdrop-blur-sm sm:px-8 sm:py-8 lg:px-10 lg:py-10">
+              <p className="text-size-12 font-semibold uppercase tracking-[0.24em] text-[#d6e4ff]">
+                Testimonials
+              </p>
+              <h1 className="mt-4 text-size-34 font-semibold leading-[1.02] tracking-[-0.04em] sm:text-size-46 lg:text-size-56">
+                Hear What Our Clients Say About Working With Rational Consultants
+              </h1>
+              <p className="mt-5 text-size-15 leading-7 text-[#d8e3f6]">
+                From property documentation to approvals and liaison services, our
+                clients trust us for reliable support, clear guidance, and
+                professional handling at every stage of the process.
+              </p>
+              <div className="mt-6 flex flex-wrap gap-3">
+                <a
+                  href="#testimonials-list"
+                  className="inline-flex items-center justify-center rounded-[12px] bg-white px-6 py-3.5 text-size-15 font-semibold text-[#123f72] transition hover:bg-[#eef4fb]"
+                >
+                  Read Reviews
+                </a>
+              </div>
+            </div>
+
+            <div className="rounded-[28px] border border-white/10 bg-white/6 px-6 py-7 shadow-[0_10px_24px_rgba(3,10,24,0.18)] backdrop-blur-sm sm:px-8 sm:py-8 lg:px-10 lg:py-10">
+              <p className="text-size-12 font-semibold uppercase tracking-[0.24em] text-[#d6e4ff]">
+                Client Trust
+              </p>
+              <div className="mt-6 grid grid-cols-2 gap-4">
+                {[
+                  { stat: "4.9 / 5", label: "Average client rating" },
+                  { stat: "1,000+", label: "Satisfied project clients" },
+                  { stat: "20+ Years", label: "Of trusted service" },
+                  { stat: "Pan-MP", label: "Reach across Madhya Pradesh" },
+                ].map(({ stat, label }) => (
+                  <div key={stat} className="rounded-[16px] border border-white/10 bg-white/6 px-4 py-5 text-center">
+                    <p className="text-size-22 font-semibold text-white">{stat}</p>
+                    <p className="mt-1.5 text-size-13 leading-5 text-[#d8e3f6]">{label}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

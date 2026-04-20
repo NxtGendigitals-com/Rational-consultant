@@ -9,7 +9,6 @@ const defaultLinks = [
   { label: "Services", href: "/services" },
   { label: "Why Choose Us", href: "/why-choose-us" },
   { label: "Testimonials", href: "/testimonials" },
-  { label: "Contact Us", href: "/contact" },
 ];
 
 export default function Navbar({
