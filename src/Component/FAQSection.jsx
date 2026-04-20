@@ -3,24 +3,24 @@ import { ChevronDown } from "lucide-react";
 
 const defaultFaqs = [
   {
-    question: "Which services do you provide?",
+    question: "What are your response times",
     answer:
-      "We provide building permissions, NOC services, TNCP approvals, property documentation, liaison support, legal consultation, land diversion, Namantaran services, and municipal clearances across Madhya Pradesh.",
+      "We respond to all inquiries within 2 hours during business hours (9 AM - 7 PM, Monday to Friday). For urgent matters, call us directly for immediate assistance.",
   },
   {
-    question: "How do I start my documentation process?",
+    question: "Do you offer free consultations?",
     answer:
-      "Contact our team via the form, phone, or email. We first review your property type, documentation stage, and approval requirements before recommending the right next steps.",
+      "Yes! We offer a free 30-minute initial consultation to understand your requirements and provide preliminary guidance on your project.",
   },
   {
-    question: "Do you support both residential and commercial projects?",
+    question: "Can I visit your office without an appointment?",
     answer:
-      "Yes. Our services are tailored for residential, commercial, and development-related projects depending on the approval, documentation, and liaison needs.",
+      "While walk-ins are welcome, we recommend scheduling an appointment to ensure our experts are available to give you dedicated attention.",
   },
   {
-    question: "Can I contact you before my documents are ready?",
+    question: "What information should I prepare before contacting you?",
     answer:
-      "Yes. In many cases an early consultation is the best first step. We guide you on the exact documents, sequence, and approval path before submission starts.",
+      "Please have details about your project type, location, timeline, and any specific requirements. If you have existing documents or plans, that would be helpful too.",
   },
 ];
 

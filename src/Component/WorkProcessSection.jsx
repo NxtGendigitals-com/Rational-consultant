@@ -2,15 +2,15 @@ import { Building2 } from "lucide-react";
 
 const defaultSteps = [
   {
-    title: "Consultation & Requirement Review",
+    title: "Consultation",
     text: "We begin by understanding your project type, documentation stage, and the exact approvals or legal support you need.",
   },
   {
-    title: "Document Planning & Preparation",
+    title: "Documentation",
     text: "Our team organizes the required papers, identifies missing records, and prepares a clear file flow for smooth submission.",
   },
   {
-    title: "Submission, Liaison & Final Follow-up",
+    title: "Submission",
     text: "We coordinate with relevant authorities, monitor progress, and stay involved until the required outcome is completed.",
   },
 ];

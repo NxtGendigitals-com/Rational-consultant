@@ -19,13 +19,11 @@ export default function Hero({
         <div className="relative grid items-start gap-2 pb-6 pt-7 sm:min-h-[500px] sm:gap-3 sm:pb-8 sm:pt-4 md:min-h-[530px] lg:min-h-[600px] lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:gap-10 lg:pb-14 lg:pt-8">
           <div className="max-w-[640px] pt-0 sm:pt-1 md:max-w-full lg:max-w-[640px] lg:pt-6">
             <h1 className="text-size-34 font-semibold leading-[1.03] tracking-[-0.04em] text-white sm:text-size-40 md:text-size-44 lg:max-w-[620px] lg:text-size-56">
-              Trusted Property Documentation & Approval Support
+              EXPERT PROPERTY DOCUMENTATION & LEGAL SERVICES IN BHOPAL
             </h1>
 
             <p className="mt-3 max-w-[520px] text-size-13 leading-5 text-[#d8deea]/82 sm:mt-4 sm:text-size-14 sm:leading-6 md:max-w-full md:text-size-15 md:leading-6 lg:max-w-[520px]">
-              Expert guidance for building permissions, NOC applications,
-              property documentation, and authority liaison across Madhya
-              Pradesh — handled with accuracy, follow-up, and local process knowledge.
+             Leading property documentation consultants in Madhya Pradesh. Get expert help with NOC applications, building permissions, municipal clearances, and legal compliance. Professional liaison services for all your property and construction documentation needs.
             </p>
           </div>
 

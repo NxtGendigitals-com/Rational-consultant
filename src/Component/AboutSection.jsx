@@ -51,7 +51,7 @@ export default function AboutSection({
               {description}
             </p>
 
-            <div className="mt-5 flex flex-wrap gap-3">
+            <div className="mt-5 hidden sm:flex flex-wrap gap-3">
               <a
                 href={buttonHref}
                 className="inline-flex items-center justify-center rounded-[12px] border border-[#d5d9e2] bg-white px-6 py-3.5 text-size-17 font-semibold text-[#1b2230] transition duration-300 hover:bg-[#123f72] hover:text-white"
@@ -65,6 +65,8 @@ export default function AboutSection({
                 {secondaryButtonLabel}
               </a>
             </div>
+
+            
           </div>
 
           <div className="relative mx-auto w-full max-w-[720px] lg:ml-auto">
@@ -83,7 +85,23 @@ export default function AboutSection({
                 Documentation Support
               </p>
             </div>
+            
           </div>
+
+           <div className="mt-5 flex sm:hidden flex-wrap gap-3">
+              <a
+                href={buttonHref}
+                className="inline-flex items-center justify-center rounded-[12px] border border-[#d5d9e2] bg-white px-6 py-3.5 text-size-17 font-semibold text-[#1b2230] transition duration-300 hover:bg-[#123f72] hover:text-white"
+              >
+                {buttonLabel}
+              </a>
+              <a
+                href={secondaryButtonHref}
+                className="inline-flex items-center justify-center rounded-[12px] border border-[#d5d9e2] bg-white px-6 py-3.5 text-size-17 font-semibold text-[#1b2230] transition hover:bg-[#123f72] hover:text-white"
+              >
+                {secondaryButtonLabel}
+              </a>
+            </div>
         </div>
 
         <div className="mt-12 grid gap-8 pt-12 lg:grid-cols-[1fr_0.98fr] lg:items-start">

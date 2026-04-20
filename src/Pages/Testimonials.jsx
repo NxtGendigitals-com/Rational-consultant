@@ -64,7 +64,7 @@ export default function Testimonials() {
               <div className="mt-6 grid grid-cols-2 gap-4">
                 {[
                   { stat: "4.9 / 5", label: "Average client rating" },
-                  { stat: "1,000+", label: "Satisfied project clients" },
+                  { stat: "55,000+", label: "Satisfied project clients" },
                   { stat: "20+ Years", label: "Of trusted service" },
                   { stat: "Pan-MP", label: "Reach across Madhya Pradesh" },
                 ].map(({ stat, label }) => (

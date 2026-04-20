@@ -48,8 +48,8 @@ export default function About() {
               <div className="mt-6 space-y-4">
                 {[
                   { stat: "20+ Years", label: "Of local process expertise in Madhya Pradesh" },
-                  { stat: "1,000+", label: "Project files successfully assisted" },
-                  { stat: "9 Services", label: "Permissions, NOC, documentation & more" },
+                  { stat: "5,000+", label: "Project files successfully assisted" },
+                  { stat: "12 Services", label: "Permissions, NOC, documentation & more" },
                   { stat: "Bhopal Based", label: "Serving clients across Madhya Pradesh" },
                 ].map(({ stat, label }) => (
                   <div key={stat} className="flex items-start gap-4 rounded-[16px] border border-white/10 bg-white/6 px-4 py-4">
@@ -92,7 +92,7 @@ export default function About() {
               <p className="text-size-13 text-[#5e6778]">Local process experience</p>
             </div>
             <div className="rounded-[16px] border border-[#dce3ee] bg-[#f8fbfd] px-5 py-4">
-              <p className="text-size-24 font-semibold text-[#123f72]">1000+</p>
+              <p className="text-size-24 font-semibold text-[#123f72]">5000+</p>
               <p className="text-size-13 text-[#5e6778]">Project files assisted</p>
             </div>
             <div className="rounded-[16px] border border-[#dce3ee] bg-[#f8fbfd] px-5 py-4">
