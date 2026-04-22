@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 export default function TestimonialsContactCta({
   className = "",
-  eyebrow = "Ready to connect?",
-  title = "Let’s discuss your property documentation and approval requirements.",
-  description = "If you want the same reliable experience our clients talk about, connect with our team and get practical guidance for your next step.",
+  eyebrow = "Ready to find your home?",
+  title = "Let’s talk about your next home, plot, or investment.",
+  description = "If you want the same trusted experience our homeowners talk about, connect with our team for site visits, pricing, and the right fit across our projects.",
   buttonLabel = "Go To Contact Page",
   buttonTo = "/contact",
 }) {

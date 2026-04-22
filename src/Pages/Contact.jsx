@@ -4,24 +4,24 @@ import FooterSection from "../Component/FooterSection";
 
 const contactFaqs = [
   {
-    question: "How do I start my documentation process?",
+    question: "How do I book a site visit?",
     answer:
-      "You can contact our team through the form, phone, or email. We first review your property type, documentation status, and approval requirements before recommending the next steps.",
+      "Reach out through the form, phone, or email with your preferred time. Our sales team will share project details and schedule a guided walkthrough of the unit, amenities, and documentation.",
   },
   {
-    question: "Which approvals do you assist with?",
+    question: "What kind of properties do you offer?",
     answer:
-      "We assist with building permissions, NOC services, TNCP approvals, property documentation, Namantaran, land diversion, and municipal clearances.",
+      "We develop residential apartments, plotted communities, commercial showrooms, office spaces, and integrated townships — all RERA-registered and built on clear-title land.",
   },
   {
-    question: "Do you support projects outside Bhopal?",
+    question: "Which markets do you operate in?",
     answer:
-      "Yes. While Bhopal is a core service area, we also support documentation and liaison needs across Madhya Pradesh depending on project requirements.",
+      "We develop across multiple cities and are actively expanding into new markets. Our team can share ongoing projects and upcoming launches in the location you're interested in.",
   },
   {
-    question: "Can I book a consultation before submitting documents?",
+    question: "Can you help with home loans and legal paperwork?",
     answer:
-      "Yes. We recommend an initial consultation so our team can guide you on required papers, process timeline, and the right approval path before filing.",
+      "Yes. We partner with leading banks and HFCs for competitive home-loan options and hand over every unit with fully verified, RERA-compliant legal documentation.",
   },
 ];
 
@@ -53,7 +53,7 @@ export default function Contact() {
         eyebrow="Need help?"
         titleStart="Common contact"
         titleHighlight="questions"
-        description="Here are a few quick answers about consultation, approvals, and the documentation process before you get in touch with our team."
+        description="Here are a few quick answers about site visits, project details, and the home-buying process before you get in touch with our team."
         faqs={contactFaqs}
       />
 

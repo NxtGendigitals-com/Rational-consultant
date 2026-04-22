@@ -31,9 +31,9 @@ function ContactInfoItem({ icon, title, lines, accentClass }) {
 export default function ContactSection({
   className = "",
   title = "Get in touch",
-  description = "Connect with our expert team for building permissions, NOC services, property documentation, and liaison support tailored to your project needs.",
+  description = "Talk to our sales team about residential apartments, plotted developments, commercial spaces, and integrated townships in your preferred location.",
   officeLines = ["Idgah Hills", "Bhopal, Madhya Pradesh"],
-  emailLines = ["info@rationalconsultant.in", "support@rationalconsultant.in"],
+  emailLines = ["info@rationalrealestate.in", "sales@rationalrealestate.in"],
   phoneLines = ["Phone : +91 91652 27984", "Alt : +91 93290 22013"],
   socialLinks = defaultSocialLinks,
 }) {

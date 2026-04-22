@@ -13,7 +13,7 @@ const defaultLinks = [
 
 export default function Navbar({
   links = defaultLinks,
-  brandName = "Rational Real Estate & Liaising",
+  brandName = "Rational Real Estate",
   className = "",
   ctaLabel = "CONTACT US",
   ctaHref = "/contact",
@@ -164,7 +164,7 @@ export default function Navbar({
 
           <div className="border-t border-[#eef2f7] px-5 py-5">
             <p className="text-size-13 leading-6 text-[#6c7688]">
-              Need quick assistance with approvals and documentation?
+              Looking for your next home or investment?
             </p>
             <Link
               to={ctaHref}

@@ -2,18 +2,18 @@ import { ArrowRight, BadgeCheck, Building2, FileCheck2, ShieldCheck } from "luci
 
 const defaultFeatures = [
   {
-    title: "20+ Years Of Practical Experience",
-    text: "We guide clients through permissions, documentation, and approvals with a process built on local expertise and long-term trust.",
+    title: "20+ Years Of Development Experience",
+    text: "Two decades of building homes and commercial spaces — backed by a reputation for quality construction, clear titles, and long-term customer trust.",
     Icon: BadgeCheck,
   },
   {
-    title: "End-To-End Approval Support",
-    text: "From initial review to authority submission and final follow-up, our team manages each stage with clarity and consistency. We map responsibilities, reduce back-and-forth, and keep your file progress visible so decision-making stays smooth and predictable.",
+    title: "End-To-End Project Delivery",
+    text: "From land acquisition and design to construction and handover, our in-house teams manage every stage with clarity and consistency. Transparent pricing, regular site updates, and a single point of contact keep the buying journey simple and predictable.",
     Icon: FileCheck2,
   },
   {
-    title: "Reliable Compliance Guidance",
-    text: "We reduce delays and confusion by helping you prepare accurate files, legal paperwork, and department-ready submissions.",
+    title: "RERA-Compliant, Ready-To-Register",
+    text: "Every project is registered, approved, and delivered with complete legal paperwork — so you can buy with confidence and move in without surprises.",
     Icon: ShieldCheck,
   },
 ];
@@ -21,10 +21,10 @@ const defaultFeatures = [
 export default function AboutPageFeatureSection({
   className = "",
   eyebrow = "Why Choose Rational",
-  title = "Professional guidance for every stage of your property approval journey.",
-  description = "We work with homeowners, builders, investors, and consultants who need dependable support for municipal permissions, NOC applications, title review, and liaison services.",
+  title = "Quality-first development at every stage of your home-buying journey.",
+  description = "We build for end-users, investors, and businesses who want a home or workspace backed by transparent documentation, strong construction, and a developer that honours its commitments.",
   imageSrc = "https://images.unsplash.com/photo-1451976426598-a7593bd6d0b2?auto=format&fit=crop&w=1200&q=80",
-  imageAlt = "Consultation and documentation planning",
+  imageAlt = "Modern real estate development",
   features = defaultFeatures,
 }) {
   return (
@@ -47,10 +47,10 @@ export default function AboutPageFeatureSection({
                 </div>
                 <div>
                   <p className="text-size-28 font-semibold leading-none tracking-[-0.05em]">
-                    1000+
+                    1000+ 
                   </p>
                   <p className="mt-1 text-size-12 font-semibold uppercase tracking-[0.18em] text-[#d7e4ff]">
-                    Projects Assisted
+                   
                   </p>
                 </div>
               </div>
@@ -101,7 +101,7 @@ export default function AboutPageFeatureSection({
               href="/contact"
               className="mt-8 inline-flex items-center gap-2 rounded-[14px] bg-[#123f72] px-6 py-3.5 text-size-15 font-semibold text-white transition hover:bg-[#0f3460]"
             >
-              Start Your Process
+              Book A Site Visit
               <ArrowRight size={18} />
             </a>
           </div>

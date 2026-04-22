@@ -6,16 +6,16 @@ import FooterSection from "../Component/FooterSection";
 
 const whyChooseSteps = [
   {
-    title: "Requirement Understanding",
-    text: "We begin by understanding the exact project scope, documentation stage, and approval needs so the process starts with clarity.",
+    title: "Understand What You Need",
+    text: "We start with the configuration, location, and budget that fits your family or business — no hard-sell, just a clear shortlist.",
   },
   {
-    title: "Accurate Planning & Support",
-    text: "Our team prepares a practical document roadmap, highlights missing records, and supports every stage with reliable coordination.",
+    title: "Build With Quality & Transparency",
+    text: "Strong engineering, premium finishes, RERA-compliant paperwork, and a payment schedule aligned to real construction progress.",
   },
   {
-    title: "Consistent Follow-Up & Delivery",
-    text: "We stay engaged through submission, liaison, and progress tracking so clients experience fewer delays and better confidence.",
+    title: "Deliver On Time, Stay For The Long Run",
+    text: "We hand over on schedule, resolve snags promptly, and remain available through a dedicated customer-care team after possession.",
   },
 ];
 
@@ -40,12 +40,12 @@ export default function WhyChooseUs() {
                 Why Choose Us
               </p>
               <h1 className="mt-4 text-size-34 font-semibold leading-[1.02] tracking-[-0.04em] sm:text-size-46 lg:text-size-56">
-                Dependable Property Documentation And Approval Support Backed By Experience
+                A Property Developer Built On Trust, Quality, And On-Time Delivery
               </h1>
               <p className="mt-5 text-size-15 leading-7 text-[#d8e3f6]">
-                We combine local process knowledge, accurate documentation support,
-                authority coordination, and practical guidance to help clients move
-                forward with more confidence and fewer delays.
+                We combine strong construction, transparent paperwork, thoughtful
+                design, and long-term customer care — so every buyer moves into
+                their home with complete confidence.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <a
@@ -63,10 +63,10 @@ export default function WhyChooseUs() {
               </p>
               <div className="mt-6 space-y-4">
                 {[
-                  { label: "Deep Local Process Knowledge", desc: "Hands-on experience navigating MP authorities and regulations" },
-                  { label: "Accurate Documentation Support", desc: "Complete, well-organized file preparation from start to finish" },
-                  { label: "Authority Coordination Expertise", desc: "Direct liaising with relevant departments on your behalf" },
-                  { label: "Reliable End-to-End Follow-Up", desc: "We stay engaged until approvals and paperwork are complete" },
+                  { label: "Uncompromised Construction Quality", desc: "Strong engineering, premium finishes, and durable materials" },
+                  { label: "On-Time Possession", desc: "A 20-year track record of handing over projects as promised" },
+                  { label: "RERA-Compliant Documentation", desc: "Clear titles, sanctioned plans, and transparent sale deeds" },
+                  { label: "Long-Term Customer Care", desc: "Dedicated teams supporting you well beyond possession" },
                 ].map(({ label, desc }) => (
                   <div key={label} className="flex items-start gap-3 rounded-[16px] border border-white/10 bg-white/6 px-4 py-4">
                     <div className="mt-1 h-2 w-2 shrink-0 rounded-full bg-[#7eb6ff]" />
@@ -89,25 +89,25 @@ export default function WhyChooseUs() {
       <AboutPageFeatureSection
         className="py-16 sm:pt-20 sm:pb-16 lg:pt-28 lg:pb-20"
         eyebrow="Our Advantage"
-        title="Why our clients choose us when the process feels complex or uncertain."
-        description="From permissions and NOC applications to title review and compliance support, we focus on practical solutions, responsive coordination, and dependable execution that clients can trust."
+        title="Why homeowners and investors choose Rational Real Estate."
+        description="From apartments and plots to commercial spaces, we focus on construction quality, transparent paperwork, and on-time possession — the things that actually matter to buyers."
         imageSrc="https://images.unsplash.com/photo-1451976426598-a7593bd6d0b2?auto=format&fit=crop&w=1200&q=80"
-        imageAlt="Professional consultation and documentation planning"
+        imageAlt="A premium residential project by Rational Real Estate"
       />
 
       <WorkProcessSection
         className="bg-white"
-        titleStart="How our approach"
-        titleHighlight="creates confidence"
+        titleStart="How we build"
+        titleHighlight="long-term trust"
         imageSrc="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80"
-        imageAlt="Process planning discussion"
+        imageAlt="On-site review of an ongoing project"
         steps={whyChooseSteps}
       />
 
       <TestimonialsContactCta
-        eyebrow="Need expert guidance?"
-        title="Choose a team that helps you move through approvals and documentation with clarity."
-        description="If you want a reliable partner for permissions, compliance, legal paperwork, or liaison support, connect with our team today."
+        eyebrow="Ready to find your next home?"
+        title="Partner with a developer that values your trust as much as the home it builds."
+        description="Whether you're looking at an apartment, a plot, or a commercial space, our team is ready to help you choose with confidence."
         buttonLabel="Go To Contact Page"
       />
       <FooterSection />

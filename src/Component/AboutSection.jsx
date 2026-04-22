@@ -2,33 +2,33 @@ import { BadgeCheck, Globe2, MapPin } from "lucide-react";
 
 const defaultStats = [
   { value: "20+", label: "Years Experience", featured: false },
-  { value: "1000+", label: "Files Assisted", featured: false },
-  { value: "MP", label: "Wide Coverage", featured: false },
-  { value: "100%", label: "End-to-End Support", featured: false },
+  { value: "1000+", label: "Homes Delivered", featured: false },
+  { value: "10+", label: "Cities Covered", featured: false },
+  { value: "100%", label: "On-Time Handover", featured: false },
 ];
 
 const defaultHighlights = [
   {
-    title: "Local process expertise",
-    text: "Deep knowledge of municipal approval flows, documentation sequences, and department expectations across Madhya Pradesh.",
+    title: "Clear-title developments",
+    text: "Every project is built on fully approved land with transparent ownership, sanctioned layouts, and RERA-compliant documentation.",
     Icon: BadgeCheck,
   },
   {
-    title: "City-wide service reach",
-    text: "Strategically placed to handle permissions, NOCs, and documentation for clients across Bhopal and MP.",
+    title: "Presence across the city",
+    text: "Residential townships, apartments, and commercial plots positioned along the fastest-growing corridors in every market we build.",
     Icon: Globe2,
   },
   {
-    title: "Accurate documentation",
-    text: "Every file is structured for compliance — reducing back-and-forth, delays, and costly rework during approvals.",
+    title: "Build quality you can trust",
+    text: "In-house engineering and site supervision ensure durable construction, premium finishes, and homes delivered as promised.",
     Icon: MapPin,
   },
 ];
 
 export default function AboutSection({
   className = "",
-  title = "Where Expertise Meets Reliable Execution.",
-  description = "Rational Consultants brings structured documentation support, authority coordination, and practical local knowledge to help clients navigate property approvals with confidence.",
+  title = "Where Craftsmanship Meets Reliable Delivery.",
+  description = "Rational Real Estate develops thoughtfully designed homes and commercial spaces — combining strong engineering, transparent paperwork, and on-time handover so buyers move in with complete peace of mind.",
   buttonLabel = "Learn About Us",
   buttonHref = "/about",
   secondaryButtonLabel = "Contact Us",
@@ -73,16 +73,16 @@ export default function AboutSection({
             <div className="overflow-hidden rounded-[28px] border border-[#e3e7ef] bg-white shadow-[0_10px_24px_rgba(15,23,42,0.06)]">
               <img
                 src={topImageSrc}
-                alt="Property documentation and consultation"
+                alt="Modern residential development"
                 className="h-[280px] w-full object-cover object-center sm:h-[360px] lg:h-[430px]"
               />
             </div>
             <div className="absolute -bottom-6 left-6 rounded-[16px] bg-[#123f72] px-5 py-4 text-white shadow-[0_8px_18px_rgba(18,63,114,0.18)]">
               <p className="text-size-26 font-semibold leading-none tracking-[-0.04em]">
-                Expert
+                Trusted
               </p>
               <p className="mt-2 text-size-11 font-semibold uppercase tracking-[0.18em] text-[#d8e4ff]">
-                Documentation Support
+                Property Developer
               </p>
             </div>
             
@@ -109,7 +109,7 @@ export default function AboutSection({
             <div className="absolute inset-x-6 bottom-0 top-1 overflow-hidden rounded-[20px]">
               <img
                 src={imageSrc}
-                alt="Modern building and property"
+                alt="Rational Real Estate project site"
                 className="h-full w-full object-cover object-bottom opacity-100"
               />
             </div>
@@ -119,9 +119,9 @@ export default function AboutSection({
                 1000+
               </p>
               <p className="mt-1 text-size-12 font-semibold uppercase leading-5 tracking-[0.18em] text-[#dbe5ff]">
-                Cases
+                Homes
                 <br />
-                Handled
+                Delivered
               </p>
             </div>
 
@@ -141,7 +141,7 @@ export default function AboutSection({
                 className="inline-flex max-w-[260px] items-center rounded-full bg-[#123f72] px-5 py-3 text-size-11 font-semibold uppercase tracking-[0.18em] text-white shadow-[0_14px_28px_rgba(18,63,114,0.22)]"
                 style={{ animation: "aboutMobileStripSlide 4s ease-in-out infinite alternate" }}
               >
-                Expert Documentation & Approval Support
+                Building Quality Homes Across Cities
               </div>
             </div>
           </div>

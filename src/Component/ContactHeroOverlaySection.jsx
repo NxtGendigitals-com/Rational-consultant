@@ -20,7 +20,7 @@ function InfoItem({ icon, title, value }) {
 export default function ContactHeroOverlaySection({
   className = "",
   title = "Send us a message",
-  description = "Share your requirement and our team will guide you with the right approvals, documentation steps, and next actions.",
+  description = "Share what you're looking for and our sales team will recommend the right project, schedule a site visit, and walk you through pricing and paperwork.",
 }) {
   return (
     <div className={`mx-auto mt-12 max-w-[1500px] ${className}`}>
@@ -31,8 +31,8 @@ export default function ContactHeroOverlaySection({
               Let&apos;s Talk
             </h2>
             <p className="mt-4 max-w-[420px] text-size-15 leading-7 text-[#dbe6f8]">
-              Connect with Rational Consultants for permissions, NOC services,
-              documentation, liaison support, and project guidance.
+              Connect with Rational Real Estate for apartments, plots,
+              commercial spaces, and integrated townships.
             </p>
 
             <div className="mt-8 space-y-4">
@@ -44,7 +44,7 @@ export default function ContactHeroOverlaySection({
               <InfoItem
                 icon={Mail}
                 title="Email"
-                value="info@rationalconsultant.in / support@rationalconsultant.in"
+                value="info@rationalrealestate.in / sales@rationalrealestate.in"
               />
               <InfoItem
                 icon={Phone}

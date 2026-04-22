@@ -21,15 +21,16 @@ export default function About() {
           <div className="grid items-start gap-6 lg:grid-cols-2">
             <div className="rounded-[28px] border border-white/10 bg-white/6 px-6 py-7 shadow-[0_10px_24px_rgba(3,10,24,0.18)] backdrop-blur-sm sm:px-8 sm:py-8 lg:px-10 lg:py-10">
               <p className="text-size-12 font-semibold uppercase tracking-[0.24em] text-[#d6e4ff]">
-                About Rational Consultants
+                About Rational Real Estate
               </p>
               <h1 className="mt-4 text-size-34 font-semibold leading-[1.02] tracking-[-0.04em] sm:text-size-46 lg:text-size-56">
-                Trusted Property Documentation And Liaison Experts In Bhopal
+                A Trusted Name In Residential And Commercial Development
               </h1>
               <p className="mt-5 text-size-15 leading-7 text-[#d8e3f6]">
-                Rational Consultants brings over 20 years of experience in building
-                permissions, NOC applications, municipal clearances, property
-                documentation, and legal compliance support across Madhya Pradesh.
+                Rational Real Estate brings over 20 years of development experience —
+                delivering premium apartments, plotted townships, and commercial
+                projects built on clear titles, strong engineering, and a reputation
+                for on-time possession across every market we serve.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <a
@@ -47,10 +48,10 @@ export default function About() {
               </p>
               <div className="mt-6 space-y-4">
                 {[
-                  { stat: "20+ Years", label: "Of local process expertise in Madhya Pradesh" },
-                  { stat: "5,000+", label: "Project files successfully assisted" },
-                  { stat: "12 Services", label: "Permissions, NOC, documentation & more" },
-                  { stat: "Bhopal Based", label: "Serving clients across Madhya Pradesh" },
+                  { stat: "20+ Years", label: "Of real estate development experience" },
+                  { stat: "1,000+", label: "Happy families living in our homes" },
+                  { stat: "9 Verticals", label: "Residential, commercial, plots & more" },
+                  { stat: "Multi-City", label: "Building across growing markets" },
                 ].map(({ stat, label }) => (
                   <div key={stat} className="flex items-start gap-4 rounded-[16px] border border-white/10 bg-white/6 px-4 py-4">
                     <div className="min-w-[90px] text-size-18 font-semibold text-white">{stat}</div>
@@ -78,26 +79,27 @@ export default function About() {
                 Our Presence
               </p>
               <h2 className="mt-3 text-size-30 font-semibold tracking-[-0.03em] text-[#172033] sm:text-size-38">
-                Ground-level support with practical local process expertise
+                On-ground development with deep local market expertise
               </h2>
               <p className="mt-4 text-size-15 leading-7 text-[#5e6778]">
-                We work closely with clients and departments to maintain accuracy,
-                proper sequencing, and smooth follow-up across approvals.
+                From land acquisition to possession, our in-house teams manage every
+                stage of a project — ensuring quality construction, transparent
+                documentation, and a smooth buying experience for every homeowner.
               </p>
             </div>
           </div>
           <div className="mt-6 grid gap-3 sm:grid-cols-3">
             <div className="rounded-[16px] border border-[#dce3ee] bg-[#f8fbfd] px-5 py-4">
               <p className="text-size-24 font-semibold text-[#123f72]">20+ Years</p>
-              <p className="text-size-13 text-[#5e6778]">Local process experience</p>
+              <p className="text-size-13 text-[#5e6778]">Of property development</p>
             </div>
             <div className="rounded-[16px] border border-[#dce3ee] bg-[#f8fbfd] px-5 py-4">
-              <p className="text-size-24 font-semibold text-[#123f72]">5000+</p>
-              <p className="text-size-13 text-[#5e6778]">Project files assisted</p>
+              <p className="text-size-24 font-semibold text-[#123f72]">1000+</p>
+              <p className="text-size-13 text-[#5e6778]">Homes handed over</p>
             </div>
             <div className="rounded-[16px] border border-[#dce3ee] bg-[#f8fbfd] px-5 py-4">
-              <p className="text-size-24 font-semibold text-[#123f72]">Reliable</p>
-              <p className="text-size-13 text-[#5e6778]">End-to-end follow-up</p>
+              <p className="text-size-24 font-semibold text-[#123f72]">RERA</p>
+              <p className="text-size-13 text-[#5e6778]">Approved developments</p>
             </div>
           </div>
         </div>

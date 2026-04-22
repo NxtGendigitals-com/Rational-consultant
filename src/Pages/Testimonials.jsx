@@ -6,16 +6,16 @@ import FooterSection from "../Component/FooterSection";
 
 const testimonialJourneySteps = [
   {
-    title: "Initial Discussion & Goal Mapping",
-    text: "We start by understanding the client’s property stage, required approvals, and the exact documentation or liaison support they need.",
+    title: "Understanding Your Needs",
+    text: "We start by understanding the kind of home, plot, or commercial space that fits your lifestyle, family, or business goals.",
   },
   {
-    title: "Clear Planning & Documentation Support",
-    text: "Our team organizes the file flow, highlights missing records, and sets a practical path for submissions and approvals.",
+    title: "Transparent Selection & Paperwork",
+    text: "Every project is walked through in detail — pricing, legal documents, amenities, and payment plans — with zero ambiguity.",
   },
   {
-    title: "Execution, Follow-up & Client Satisfaction",
-    text: "We coordinate with the required departments, keep clients updated, and stay involved until the work reaches a successful outcome.",
+    title: "Construction, Handover & Ongoing Care",
+    text: "Regular construction updates, smooth possession, and a dedicated customer-care team long after you move in.",
   },
 ];
 
@@ -40,12 +40,12 @@ export default function Testimonials() {
                 Testimonials
               </p>
               <h1 className="mt-4 text-size-34 font-semibold leading-[1.02] tracking-[-0.04em] sm:text-size-46 lg:text-size-56">
-                Hear What Our Clients Say About Working With Rational Consultants
+                Hear What Our Homeowners Say About Rational Real Estate
               </h1>
               <p className="mt-5 text-size-15 leading-7 text-[#d8e3f6]">
-                From property documentation to approvals and liaison services, our
-                clients trust us for reliable support, clear guidance, and
-                professional handling at every stage of the process.
+                From home buyers and plot owners to commercial investors, our
+                customers trust us for quality construction, transparent
+                paperwork, and on-time possession across every project.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <a
@@ -63,10 +63,10 @@ export default function Testimonials() {
               </p>
               <div className="mt-6 grid grid-cols-2 gap-4">
                 {[
-                  { stat: "4.9 / 5", label: "Average client rating" },
-                  { stat: "55,000+", label: "Satisfied project clients" },
-                  { stat: "20+ Years", label: "Of trusted service" },
-                  { stat: "Pan-MP", label: "Reach across Madhya Pradesh" },
+                  { stat: "4.9 / 5", label: "Average customer rating" },
+                  { stat: "1,000+", label: "Families in our communities" },
+                  { stat: "20+ Years", label: "Of trusted development" },
+                  { stat: "Multi-City", label: "Presence across growing markets" },
                 ].map(({ stat, label }) => (
                   <div key={stat} className="rounded-[16px] border border-white/10 bg-white/6 px-4 py-5 text-center">
                     <p className="text-size-22 font-semibold text-white">{stat}</p>
@@ -81,10 +81,10 @@ export default function Testimonials() {
      <WhatMakesUsDifferentSection />
       <WorkProcessSection
         className="bg-white"
-        titleStart="How clients experience"
-        titleHighlight="our process"
+        titleStart="How our customers experience"
+        titleHighlight="the buying journey"
         imageSrc="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80"
-        imageAlt="Professional consultation meeting"
+        imageAlt="Happy family at a Rational Real Estate home"
         steps={testimonialJourneySteps}
       />
       <div id="testimonials-list">

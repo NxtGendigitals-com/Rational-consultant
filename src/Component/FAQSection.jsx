@@ -3,24 +3,24 @@ import { ChevronDown } from "lucide-react";
 
 const defaultFaqs = [
   {
-    question: "What are your response times",
+    question: "What are your response times?",
     answer:
-      "We respond to all inquiries within 2 hours during business hours (9 AM - 7 PM, Monday to Friday). For urgent matters, call us directly for immediate assistance.",
+      "Our sales team responds to all inquiries within 2 hours during working hours (9 AM – 7 PM, Monday to Saturday). For urgent matters, call us directly for immediate assistance.",
   },
   {
-    question: "Do you offer free consultations?",
+    question: "Can I book a site visit?",
     answer:
-      "Yes! We offer a free 30-minute initial consultation to understand your requirements and provide preliminary guidance on your project.",
+      "Yes. Site visits are the best way to experience our projects. Share your preferred slot and our team will arrange a guided walkthrough of the project, unit, and amenities.",
   },
   {
-    question: "Can I visit your office without an appointment?",
+    question: "Are your projects RERA-approved?",
     answer:
-      "While walk-ins are welcome, we recommend scheduling an appointment to ensure our experts are available to give you dedicated attention.",
+      "Every project we develop is registered under RERA, built on clear-title land, and handed over with complete, transparent legal documentation.",
   },
   {
-    question: "What information should I prepare before contacting you?",
+    question: "Do you help buyers with home loans?",
     answer:
-      "Please have details about your project type, location, timeline, and any specific requirements. If you have existing documents or plans, that would be helpful too.",
+      "Yes. We are empanelled with leading banks and housing finance companies to help you compare interest rates, get quick approvals, and manage the paperwork.",
   },
 ];
 
@@ -62,7 +62,7 @@ export default function FAQSection({
   eyebrow = "Frequently asked questions",
   titleStart = "Frequently asked",
   titleHighlight = "questions",
-  description = "Quick answers about our services, how we work, and how clients usually begin the process with us.",
+  description = "Quick answers about our projects, the buying process, and what it's like to become part of the Rational Real Estate community.",
   faqs = defaultFaqs,
 }) {
   const [openIndex, setOpenIndex] = useState(0);

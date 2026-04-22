@@ -4,43 +4,43 @@ import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 const defaultTestimonials = [
   {
     quote:
-      "Rational Consultants handled our building permission from start to finish. The documentation was accurate, the follow-up was consistent, and we faced no delays. Highly professional team.",
+      "Our 3BHK at a Rational Real Estate project was handed over ahead of schedule. Construction quality, fittings, and finish all lived up to what we were shown at booking. A rare experience.",
     name: "Rajesh Verma",
-    role: "Property Developer, Bhopal",
+    role: "Homeowner",
     image:
       "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=160&q=80",
   },
   {
     quote:
-      "We had a complex NOC requirement that other consultants couldn't resolve. Rational Consultants mapped the exact process, handled the departmental submission, and got it cleared efficiently.",
+      "Bought a retail showroom with them last year. The paperwork was clean, pricing was transparent, and the location has turned out to be everything they promised — footfall is excellent.",
     name: "Priya Sharma",
-    role: "Commercial Project Owner, MP",
+    role: "Retail Business Owner",
     image:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=160&q=80",
   },
   {
     quote:
-      "Their property documentation review saved us from a title dispute before finalizing our purchase. Thorough, well-structured, and genuinely helpful guidance at every step.",
+      "We invested in a plot in their township. Clear title, fully sanctioned layout, and infrastructure already in place when we took possession. Exactly the trust you want in a developer.",
     name: "Amit Joshi",
-    role: "Residential Buyer, Bhopal",
+    role: "Plot Owner",
     image:
       "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=160&q=80",
   },
   {
     quote:
-      "From consultation to final approval, the entire TNCP process was handled without us needing to follow up repeatedly. That reliability is what we needed and exactly what we got.",
+      "Their team helped us through home-loan paperwork, walked us through every document, and stayed available well after possession. Exactly the kind of developer you want to buy from.",
     name: "Sunita Mehta",
-    role: "Builder & Investor, Indore",
+    role: "Investor",
     image:
       "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=160&q=80",
   },
 ];
 
 const defaultStats = [
-  { value: "4.9/5", label: "Client Rating" },
-  { value: "1000+", label: "Files Handled" },
-  { value: "98%", label: "Success Rate" },
-  { value: "500+", label: "Happy Clients" },
+  { value: "4.9/5", label: "Customer Rating" },
+  { value: "1000+", label: "Homes Delivered" },
+  { value: "100%", label: "RERA Approved" },
+  { value: "500+", label: "Happy Families" },
 ];
 
 function TestimonialCard({ quote, name, role, image }) {
@@ -97,8 +97,8 @@ export default function Testomonial({
               Testimonials
             </p>
             <h2 className="mt-3 text-size-34 font-semibold leading-[0.98] tracking-[-0.05em] text-[#1a2230] sm:text-size-40 lg:text-size-48">
-              Trusted by property owners &
-              <span className="block text-[#123f72]">developers across Madhya Pradesh</span>
+              Trusted by homeowners &
+              <span className="block text-[#123f72]">investors across growing markets</span>
             </h2>
           </div>
 

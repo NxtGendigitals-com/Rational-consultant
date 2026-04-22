@@ -2,23 +2,23 @@ import { BadgeCheck, Clock3, FileText, Handshake } from "lucide-react";
 
 const defaultPoints = [
   {
-    title: "Local process expertise",
-    text: "We understand the practical approval flow, municipal expectations, and documentation sequence required for smoother execution.",
+    title: "Construction quality",
+    text: "Every project is built with strong engineering, premium materials, and rigorous in-house site supervision from day one.",
     Icon: BadgeCheck,
   },
   {
-    title: "Transparent coordination",
-    text: "Clients receive clear communication, realistic timelines, and dependable follow-up through each approval stage.",
+    title: "Transparent dealings",
+    text: "Upfront pricing, clear payment plans, and full disclosure of approvals — no hidden charges or last-minute surprises.",
     Icon: Handshake,
   },
   {
-    title: "Documentation accuracy",
-    text: "Our team helps organize records, verify details, and reduce errors that usually cause delays or rework.",
+    title: "Clear-title paperwork",
+    text: "Every unit is sold with verified titles, RERA registration, and fully compliant sale documentation you can trust.",
     Icon: FileText,
   },
   {
-    title: "Timely progress support",
-    text: "We stay involved from consultation to submission and approval tracking, so momentum is maintained throughout the process.",
+    title: "On-time possession",
+    text: "A 20-year track record of delivering homes as promised — with regular construction updates throughout the journey.",
     Icon: Clock3,
   },
 ];
@@ -36,12 +36,12 @@ export default function WhatMakesUsDifferentSection({
               What Makes Us Different
             </p>
             <h2 className="mt-4 text-size-36 font-semibold leading-[1.05] tracking-[-0.05em] text-[#172033] sm:text-size-46 lg:text-size-52">
-              Why clients trust our team for complex approvals and property documentation.
+              Why homeowners and investors pick Rational Real Estate.
             </h2>
             <p className="mt-6 text-size-16 leading-8 text-[#667085]">
-              We combine responsive client support, practical knowledge of
-              local procedures, and careful documentation handling to deliver a
-              smoother experience from start to finish.
+              We bring together strong engineering, transparent paperwork, and
+              a long-term customer-care mindset to make buying a home feel
+              simple, confident, and fair — from booking to move-in and beyond.
             </p>
 
             <div className="mt-8 rounded-[24px] bg-[linear-gradient(135deg,#123f72_0%,#244f86_100%)] px-6 py-6 text-white shadow-[0_22px_44px_rgba(18,63,114,0.2)]">
@@ -49,11 +49,11 @@ export default function WhatMakesUsDifferentSection({
                 98%
               </p>
               <p className="mt-3 text-size-12 font-semibold uppercase tracking-[0.2em] text-[#d8e4ff]">
-                Client Satisfaction Rate
+                Customer Satisfaction Rate
               </p>
               <p className="mt-4 text-size-14 leading-7 text-[#dbe6f8]">
-                Trusted by property owners, consultants, and developers who need
-                reliable approval support without confusion or delay.
+                Trusted by homeowners and investors across every market for
+                quality construction, transparent dealings, and on-time delivery.
               </p>
             </div>
           </div>

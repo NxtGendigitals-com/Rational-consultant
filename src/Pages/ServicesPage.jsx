@@ -6,39 +6,39 @@ import FooterSection from "../Component/FooterSection";
 
 const serviceProcessSteps = [
   {
-    title: "Consultation & Requirement Review",
-    text: "We understand your project type, current documentation status, and the exact approvals or legal support you require.",
+    title: "Discovery & Site Visit",
+    text: "We understand what you're looking for — home, plot, office, or investment — and walk you through the projects that fit.",
   },
   {
-    title: "Document Planning & Preparation",
-    text: "Our team organizes the required papers, identifies missing records, and prepares the file flow for a smooth submission process.",
+    title: "Selection & Transparent Paperwork",
+    text: "Pick the unit, review every document openly, and lock the price with a clear, RERA-compliant booking process.",
   },
   {
-    title: "Submission, Liaison & Final Follow-up",
-    text: "We coordinate with the relevant authorities, monitor updates, and stay involved until the required outcome is completed.",
+    title: "Construction, Handover & Care",
+    text: "Regular site updates through construction, smooth possession, and a dedicated customer-care team long after you move in.",
   },
 ];
 
 const serviceFaqs = [
   {
-    question: "Which services do you provide?",
+    question: "What does Rational Real Estate build?",
     answer:
-      "We provide building permissions, NOC services, TNCP approvals, property documentation, liaison support, legal consultation, land diversion, Namantaran services, and municipal clearances.",
+      "We develop residential apartments, plotted communities, commercial showrooms, offices, and integrated townships — backed by in-house design, construction, legal, and customer-care teams.",
   },
   {
-    question: "Can I contact you before my documents are ready?",
+    question: "Are your projects RERA-approved?",
     answer:
-      "Yes. In many cases an early consultation is the best step, because we can guide you on the exact documents, sequence, and approval path before submission starts.",
+      "Yes. Every project we sell is registered under RERA, built on clear-title land, and handed over with complete legal documentation.",
   },
   {
-    question: "Do you support both residential and commercial projects?",
+    question: "Do you help with home loans?",
     answer:
-      "Yes. Our services are tailored for residential, commercial, and development-related projects depending on the approval, documentation, and liaison needs.",
+      "Absolutely. We partner with leading banks and housing finance companies to help buyers get competitive interest rates, quick approvals, and paperwork-light loan processing.",
   },
   {
-    question: "How does your service process usually begin?",
+    question: "How do I book a home?",
     answer:
-      "It starts with a requirement review, followed by document planning, file preparation, submission support, and authority follow-up until the desired stage is complete.",
+      "It starts with a site visit, followed by unit selection, a transparent booking process, and a flexible payment plan aligned to construction milestones.",
   },
 ];
 
@@ -63,12 +63,12 @@ export default function ServicesPage() {
                 Our Services
               </p>
               <h1 className="mt-4 text-size-34 font-semibold leading-[1.02] tracking-[-0.04em] sm:text-size-46 lg:text-size-56">
-                End-To-End Documentation, Approval, And Liaison Support For Your Property Projects
+                Homes, Plots, And Commercial Spaces — Built For Modern Living
               </h1>
               <p className="mt-5 text-size-15 leading-7 text-[#d8e3f6]">
-                Explore the professional services we provide for permissions, NOC
-                applications, property documentation, legal consultation, and
-                authority coordination across residential and commercial projects.
+                Explore our residential apartments, plotted developments,
+                commercial showrooms, and integrated townships — each backed by
+                RERA approval, strong engineering, and on-time delivery.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <a
@@ -86,10 +86,10 @@ export default function ServicesPage() {
               </p>
               <div className="mt-6 space-y-4">
                 {[
-                  { label: "Building Permissions & NOC Services", desc: "Approvals for residential and commercial projects" },
-                  { label: "Property Documentation", desc: "Title deeds, sale deeds, ownership records" },
-                  { label: "TNCP & Municipal Clearances", desc: "Regulatory approvals from local authorities" },
-                  { label: "Legal Consultation & Liaison", desc: "Expert guidance and authority coordination" },
+                  { label: "Residential Apartments & Villas", desc: "Thoughtfully designed homes for modern families" },
+                  { label: "Plotted Developments", desc: "Clear-title plots in approved layouts" },
+                  { label: "Commercial & Retail Spaces", desc: "Showrooms and offices in prime locations" },
+                  { label: "Integrated Townships", desc: "Self-contained communities with full amenities" },
                 ].map(({ label, desc }) => (
                   <div key={label} className="flex items-start gap-3 rounded-[16px] border border-white/10 bg-white/6 px-4 py-4">
                     <div className="mt-1 h-2 w-2 shrink-0 rounded-full bg-[#7eb6ff]" />
@@ -111,10 +111,10 @@ export default function ServicesPage() {
 
       <WorkProcessSection
         className="bg-white"
-        titleStart="How our service"
-        titleHighlight="process works"
+        titleStart="How your"
+        titleHighlight="home-buying journey works"
         imageSrc="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80"
-        imageAlt="Documentation and planning discussion"
+        imageAlt="Home buying discussion with a real estate team"
         steps={serviceProcessSteps}
       />
 
@@ -123,14 +123,14 @@ export default function ServicesPage() {
         eyebrow="Service FAQs"
         titleStart="Questions about"
         titleHighlight="our services"
-        description="A few quick answers about how our services work, what we support, and how clients usually begin with us."
+        description="A few quick answers about our projects, legal process, and what buying with Rational Real Estate looks like."
         faqs={serviceFaqs}
       />
 
       <TestimonialsContactCta
-        eyebrow="Need service support?"
-        title="Discuss your project approvals, paperwork, and documentation needs with our team."
-        description="Whether you need permissions, legal review, liaison support, or document preparation, we can help you move forward with clarity."
+        eyebrow="Looking for your next home?"
+        title="Visit one of our ongoing projects or speak with our sales team today."
+        description="Whether you want an apartment, a plot, or a commercial space, our team will help you shortlist the right fit across our portfolio."
         buttonLabel="Go To Contact Page"
       />
       <FooterSection />

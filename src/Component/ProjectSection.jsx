@@ -2,22 +2,22 @@ import { ArrowRight } from "lucide-react";
 
 const defaultProjects = [
   {
-    title: "Building Permissions",
-    count: "400+ projects",
+    title: "Residential Projects",
+    count: "600+ homes",
     image:
       "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80",
     size: "large",
   },
   {
-    title: "Property Documentation",
-    count: "350+ projects",
+    title: "Plotted Developments",
+    count: "250+ plots",
     image:
       "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=80",
     size: "small",
   },
   {
-    title: "NOC & Liaison",
-    count: "300+ projects",
+    title: "Commercial Spaces",
+    count: "150+ units",
     image:
       "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80",
     size: "small",
@@ -54,10 +54,10 @@ function ProjectCard({ title, count, image, size = "small" }) {
 
 export default function ProjectSection({
   className = "",
-  titleStart = "1000+ Cases Handled",
-  titleHighlight = "Across Madhya Pradesh",
-  description = "From building permissions and NOC applications to property documentation and legal compliance — our team delivers reliable results across residential and commercial projects.",
-  buttonLabel = "Our Services",
+  titleStart = "1000+ Homes Delivered",
+  titleHighlight = "Across Growing Markets",
+  description = "From premium apartments and plotted communities to commercial showrooms — our portfolio delivers quality construction, on-time possession, and clear-title ownership.",
+  buttonLabel = "Our Projects",
   buttonHref = "/services",
   projects = defaultProjects,
 }) {
@@ -66,14 +66,14 @@ export default function ProjectSection({
   return (
     <section className={`bg-white py-20 sm:pt-20 sm:pb-5 ${className}`}>
       <div className="mx-auto max-w-[1500px] px-4 sm:px-6 lg:px-8">
-        <div className="grid gap-10 lg:grid-cols-[0.72fr_1.28fr] lg:items-center lg:gap-14">
-          <div className="lg:max-w-[300px]">
-            <h2 className="text-size-36 font-semibold leading-[0.96] tracking-[-0.05em] text-[#121826] sm:text-size-44 lg:text-size-52">
+        <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center lg:gap-14">
+          <div className="lg:max-w-[420px]">
+            <h2 className="text-size-36 font-semibold leading-[1.02] tracking-[-0.05em] text-[#121826] sm:text-size-44 lg:text-size-48">
               <span className="block">{titleStart}</span>
               <span className="block text-[#123f72]">{titleHighlight}</span>
             </h2>
 
-            <p className="mt-6 text-size-13 leading-6 text-[#7e8695] sm:text-size-14 lg:max-w-[250px]">
+            <p className="mt-6 text-size-13 leading-6 text-[#7e8695] sm:text-size-14 lg:max-w-[360px]">
               {description}
             </p>
 

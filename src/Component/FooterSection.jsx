@@ -18,10 +18,10 @@ const defaultExploreLinks = [
 
 const defaultCompanyLinks = [
   { label: "Contact Us", href: "/contact" },
-  { label: "Consultation", href: "/contact" },
-  { label: "Documentation Support", href: "/services" },
-  { label: "Client Reviews", href: "/testimonials" },
-  { label: "Our Process", href: "/why-choose-us" },
+  { label: "Book A Site Visit", href: "/contact" },
+  { label: "Our Projects", href: "/services" },
+  { label: "Customer Reviews", href: "/testimonials" },
+  { label: "Why Choose Us", href: "/why-choose-us" },
 ];
 
 const defaultSocialLinks = [
@@ -52,10 +52,10 @@ function FooterLinkColumn({ title, links }) {
 
 export default function FooterSection({
   className = "",
-  brandName = "Rational Consultants",
-  introTitle = "Let us support your project documentation journey.",
-  email = "info@rationalconsultant.in",
-  websiteLabel = "www.rationalconsultant.in",
+  brandName = "Rational Real Estate",
+  introTitle = "Let's find the home you've been looking for.",
+  email = "info@rationalrealestate.in",
+  websiteLabel = "www.rationalrealestate.in",
   address = "Idgah Hills, Bhopal, Madhya Pradesh",
   phone = "+91 91652 27984",
   exploreLinks = defaultExploreLinks,
@@ -101,8 +101,9 @@ export default function FooterSection({
             </Link>
 
             <p className=" max-w-[320px] text-size-13 leading-6 text-[#b5c4d8]">
-              Trusted property documentation and liaison experts for building
-              permissions, NOCs, municipal clearances, and legal compliance.
+              A trusted property developer building residential apartments,
+              plotted communities, commercial spaces, and integrated townships
+              across growing markets.
             </p>
 
             <div className="mt-6 space-y-4 text-size-13 text-[#d2ddeb]">
@@ -150,7 +151,7 @@ export default function FooterSection({
 
             <div className="mt-10">
               <p className="text-size-12 uppercase tracking-[0.2em] text-white">
-                Rational Consultants
+                Rational Real Estate
               </p>
               <p className="mt-3 text-size-12 text-[#aebfd4]">
                 Copyright 2026, all rights reserved

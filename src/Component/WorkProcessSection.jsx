@@ -1,32 +1,30 @@
-import { Building2 } from "lucide-react";
-
 const defaultSteps = [
   {
-    title: "Consultation",
-    text: "We begin by understanding your project type, documentation stage, and the exact approvals or legal support you need.",
+    title: "Discover",
+    text: "Walk our ongoing projects, explore layouts and amenities, and discuss the configuration that fits your family or business.",
   },
   {
-    title: "Documentation",
-    text: "Our team organizes the required papers, identifies missing records, and prepares a clear file flow for smooth submission.",
+    title: "Decide",
+    text: "Lock your unit with transparent pricing, a clear payment schedule, and fully verified legal documentation.",
   },
   {
-    title: "Submission",
-    text: "We coordinate with relevant authorities, monitor progress, and stay involved until the required outcome is completed.",
+    title: "Move In",
+    text: "Track construction milestones until possession, then settle in with ongoing customer-care support from our team.",
   },
 ];
 
 const defaultStats = [
   { value: "20+", label: "Years" },
-  { value: "1000+", label: "Files" },
-  { value: "MP-Wide", label: "Reach" },
+  { value: "1000+", label: "Homes" },
+  { value: "Multi-City", label: "Presence" },
 ];
 
 export default function WorkProcessSection({
   className = "",
   titleStart = "Our process makes",
-  titleHighlight = "approvals simpler",
+  titleHighlight = "buying a home simple",
   imageSrc = "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80",
-  imageAlt = "Documentation and planning session",
+  imageAlt = "Home buying journey with Rational Real Estate",
   steps = defaultSteps,
   stats = defaultStats,
 }) {
@@ -65,9 +63,6 @@ export default function WorkProcessSection({
                 </h2>
               </div>
 
-              <div className="hidden rounded-2xl bg-[#eef4fb] p-3 text-[#123f72] lg:flex">
-                <Building2 size={22} />
-              </div>
             </div>
 
             <div className="mt-8 space-y-8">

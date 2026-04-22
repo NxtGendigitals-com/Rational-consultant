@@ -7,7 +7,7 @@ const processSteps = [
   },
   {
     title: "Bespoke Design Tailored to You",
-    text: "From consultation to concept, every detail is aligned with your lifestyle and brand direction.",
+    text: "From first idea to final concept, every detail is aligned with your lifestyle and brand direction.",
   },
   {
     title: "From Sketch to Launch, We're With You",
