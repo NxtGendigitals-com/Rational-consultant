@@ -56,7 +56,8 @@ export default function FooterSection({
   introTitle = "Let's find the home you've been looking for.",
   email = "info@rationalrealestate.in",
   websiteLabel = "www.rationalrealestate.in",
-  address = "Idgah Hills, Bhopal, Madhya Pradesh",
+  address = "Idgah Hills, Bhopal, Madhya Pradesh, India",
+  dubaiAddress = "Business Bay, Dubai, UAE",
   phone = "+91 91652 27984",
   exploreLinks = defaultExploreLinks,
   companyLinks = defaultCompanyLinks,
@@ -103,13 +104,16 @@ export default function FooterSection({
             <p className=" max-w-[320px] text-size-13 leading-6 text-[#b5c4d8]">
               A trusted property developer building residential apartments,
               plotted communities, commercial spaces, and integrated townships
-              across growing markets.
+              across India — and selling premium property across Dubai.
             </p>
 
             <div className="mt-6 space-y-4 text-size-13 text-[#d2ddeb]">
               <div className="flex items-start gap-3">
                 <MapPin size={16} className="mt-0.5 shrink-0 text-white" />
-                <span>{address}</span>
+                <div className="space-y-1">
+                  <p><span className="font-semibold text-white">India:</span> {address}</p>
+                  <p><span className="font-semibold text-white">Dubai:</span> {dubaiAddress}</p>
+                </div>
               </div>
               <div className="flex items-center gap-3">
                 <Phone size={16} className="shrink-0 text-white" />

@@ -11,12 +11,12 @@ const contactFaqs = [
   {
     question: "What kind of properties do you offer?",
     answer:
-      "We develop residential apartments, plotted communities, commercial showrooms, office spaces, and integrated townships — all RERA-registered and built on clear-title land.",
+      "In India, we develop residential apartments, plotted communities, commercial showrooms, office spaces, and integrated townships — all RERA-registered and built on clear-title land. In Dubai, we sell a curated portfolio of premium apartments, villas, and commercial units with verified titles and full DLD-compliant paperwork.",
   },
   {
     question: "Which markets do you operate in?",
     answer:
-      "We develop across multiple cities and are actively expanding into new markets. Our team can share ongoing projects and upcoming launches in the location you're interested in.",
+      "We operate across India and Dubai. In India our development footprint spans multiple cities, and in Dubai we sell premium property across the UAE market — share what you're looking for and we'll point you to the right project or unit.",
   },
   {
     question: "Can you help with home loans and legal paperwork?",

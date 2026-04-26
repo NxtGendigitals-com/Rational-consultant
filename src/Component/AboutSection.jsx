@@ -3,7 +3,7 @@ import { BadgeCheck, Globe2, MapPin } from "lucide-react";
 const defaultStats = [
   { value: "20+", label: "Years Experience", featured: false },
   { value: "1000+", label: "Homes Delivered", featured: false },
-  { value: "10+", label: "Cities Covered", featured: false },
+  { value: "India + Dubai", label: "Markets Served", featured: false },
   { value: "100%", label: "On-Time Handover", featured: false },
 ];
 
@@ -14,8 +14,8 @@ const defaultHighlights = [
     Icon: BadgeCheck,
   },
   {
-    title: "Presence across the city",
-    text: "Residential townships, apartments, and commercial plots positioned along the fastest-growing corridors in every market we build.",
+    title: "Presence across India and Dubai",
+    text: "Residential townships, apartments, and commercial plots across India's fastest-growing corridors — and a curated portfolio of premium property for sale across Dubai.",
     Icon: Globe2,
   },
   {
@@ -28,7 +28,7 @@ const defaultHighlights = [
 export default function AboutSection({
   className = "",
   title = "Where Craftsmanship Meets Reliable Delivery.",
-  description = "Rational Real Estate develops thoughtfully designed homes and commercial spaces — combining strong engineering, transparent paperwork, and on-time handover so buyers move in with complete peace of mind.",
+  description = "Rational Real Estate develops thoughtfully designed homes and commercial spaces across India and sells premium property across Dubai — combining strong engineering, transparent paperwork, and on-time handover so every buyer moves in with complete peace of mind.",
   buttonLabel = "Learn About Us",
   buttonHref = "/about",
   secondaryButtonLabel = "Contact Us",
@@ -141,7 +141,7 @@ export default function AboutSection({
                 className="inline-flex max-w-[260px] items-center rounded-full bg-[#123f72] px-5 py-3 text-size-11 font-semibold uppercase tracking-[0.18em] text-white shadow-[0_14px_28px_rgba(18,63,114,0.22)]"
                 style={{ animation: "aboutMobileStripSlide 4s ease-in-out infinite alternate" }}
               >
-                Building Quality Homes Across Cities
+                Building Across India & Dubai
               </div>
             </div>
           </div>

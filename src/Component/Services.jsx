@@ -7,6 +7,7 @@ import {
   FileBadge2,
   FileCheck,
   FileText,
+  Globe2,
   MapPinned,
   Scale,
   ShieldCheck,
@@ -359,6 +360,44 @@ const services = [
       },
     ],
   },
+  {
+    title: "Sell Property In Dubai",
+    icon: Globe2,
+    desc: "We sell premium properties across Dubai — apartments, villas, and commercial units listed on our portfolio with verified titles, transparent pricing, and full DLD-compliant paperwork.",
+    accent: "from-[#b88746] to-[#d4a55f]",
+    iconBg: "bg-[#fbf2e3]",
+    headerFrom: "#a3743a",
+    headerTo: "#c89853",
+    accentColor: "#a3743a",
+    features: [
+      "Apartments, Villas & Commercial",
+      "Verified Title & Ownership",
+      "DLD-Compliant Paperwork",
+      "Transparent Pricing",
+    ],
+    process: [
+      {
+        title: "Property Walkthrough",
+        desc: "Explore our Dubai inventory and shortlist units that match your budget and goals",
+        day: "Step 1",
+      },
+      {
+        title: "Site Visit",
+        desc: "Visit the property in person or via guided virtual tour with our Dubai team",
+        day: "Step 2",
+      },
+      {
+        title: "Booking & Agreement",
+        desc: "Lock the price with a clear MOU and transparent payment plan",
+        day: "Step 3",
+      },
+      {
+        title: "DLD Transfer & Handover",
+        desc: "Full coordination of NOC, DLD transfer, and key handover",
+        day: "Step 4",
+      },
+    ],
+  },
 ];
 
 export default function Services() {
@@ -380,9 +419,9 @@ export default function Services() {
             <span className="text-[#123f72]">Services</span> We Provide
           </h2>
           <p className="mt-4 text-size-15 leading-7 text-[#7d8797]">
-            Homes, commercial spaces, plots, and integrated townships — backed
-            by in-house design, legal, and customer care teams for a seamless
-            buying experience.
+            Homes, commercial spaces, plots, and integrated townships across
+            India — plus property sale support in Dubai — backed by in-house
+            design, legal, and customer care teams for a seamless experience.
           </p>
         </div>
 

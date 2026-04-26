@@ -23,7 +23,7 @@ export default function Hero({
             </h1>
 
             <p className="mt-3 max-w-[520px] text-size-13 leading-5 text-[#d8deea]/82 sm:mt-4 sm:text-size-14 sm:leading-6 md:max-w-full md:text-size-15 md:leading-6 lg:max-w-[520px]">
-             Rational Real Estate is a leading property developer — building residential townships, premium apartments, and commercial projects backed by transparent paperwork, on-time delivery, and uncompromised construction quality.
+             Rational Real Estate is a leading property developer with a presence across India and Dubai — building residential townships, premium apartments, and commercial projects in India, and selling premium property across Dubai with transparent paperwork and on-time delivery.
             </p>
           </div>
 

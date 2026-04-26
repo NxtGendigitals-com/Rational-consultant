@@ -43,9 +43,10 @@ export default function Testimonials() {
                 Hear What Our Homeowners Say About Rational Real Estate
               </h1>
               <p className="mt-5 text-size-15 leading-7 text-[#d8e3f6]">
-                From home buyers and plot owners to commercial investors, our
-                customers trust us for quality construction, transparent
-                paperwork, and on-time possession across every project.
+                From home buyers and plot owners in India to Dubai property
+                buyers, our customers trust us for quality construction,
+                transparent paperwork, and on-time delivery across every
+                transaction.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <a
@@ -66,7 +67,7 @@ export default function Testimonials() {
                   { stat: "4.9 / 5", label: "Average customer rating" },
                   { stat: "1,000+", label: "Families in our communities" },
                   { stat: "20+ Years", label: "Of trusted development" },
-                  { stat: "Multi-City", label: "Presence across growing markets" },
+                  { stat: "India + Dubai", label: "Active across both markets" },
                 ].map(({ stat, label }) => (
                   <div key={stat} className="rounded-[16px] border border-white/10 bg-white/6 px-4 py-5 text-center">
                     <p className="text-size-22 font-semibold text-white">{stat}</p>

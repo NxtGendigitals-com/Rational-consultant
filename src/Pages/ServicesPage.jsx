@@ -21,9 +21,9 @@ const serviceProcessSteps = [
 
 const serviceFaqs = [
   {
-    question: "What does Rational Real Estate build?",
+    question: "What does Rational Real Estate build and sell?",
     answer:
-      "We develop residential apartments, plotted communities, commercial showrooms, offices, and integrated townships — backed by in-house design, construction, legal, and customer-care teams.",
+      "In India we develop residential apartments, plotted communities, commercial showrooms, offices, and integrated townships — backed by in-house design, construction, legal, and customer-care teams. In Dubai, we sell a curated portfolio of premium apartments, villas, and commercial units with verified titles and full DLD-compliant paperwork.",
   },
   {
     question: "Are your projects RERA-approved?",
@@ -63,12 +63,14 @@ export default function ServicesPage() {
                 Our Services
               </p>
               <h1 className="mt-4 text-size-34 font-semibold leading-[1.02] tracking-[-0.04em] sm:text-size-46 lg:text-size-56">
-                Homes, Plots, And Commercial Spaces — Built For Modern Living
+                Homes, Plots & Commercial Spaces In India — Premium Property For Sale In Dubai
               </h1>
               <p className="mt-5 text-size-15 leading-7 text-[#d8e3f6]">
                 Explore our residential apartments, plotted developments,
-                commercial showrooms, and integrated townships — each backed by
-                RERA approval, strong engineering, and on-time delivery.
+                commercial showrooms, and integrated townships in India — and a
+                curated portfolio of premium property we sell across Dubai, all
+                backed by strong engineering, transparent paperwork, and on-time
+                delivery.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <a
@@ -86,10 +88,10 @@ export default function ServicesPage() {
               </p>
               <div className="mt-6 space-y-4">
                 {[
-                  { label: "Residential Apartments & Villas", desc: "Thoughtfully designed homes for modern families" },
+                  { label: "Residential Apartments & Villas", desc: "Thoughtfully designed homes for modern families across India" },
                   { label: "Plotted Developments", desc: "Clear-title plots in approved layouts" },
-                  { label: "Commercial & Retail Spaces", desc: "Showrooms and offices in prime locations" },
-                  { label: "Integrated Townships", desc: "Self-contained communities with full amenities" },
+                  { label: "Commercial & Retail Spaces", desc: "Showrooms and offices in prime Indian locations" },
+                  { label: "Property For Sale In Dubai", desc: "Premium apartments, villas, and commercial units we sell across the UAE" },
                 ].map(({ label, desc }) => (
                   <div key={label} className="flex items-start gap-3 rounded-[16px] border border-white/10 bg-white/6 px-4 py-4">
                     <div className="mt-1 h-2 w-2 shrink-0 rounded-full bg-[#7eb6ff]" />
@@ -128,9 +130,9 @@ export default function ServicesPage() {
       />
 
       <TestimonialsContactCta
-        eyebrow="Looking for your next home?"
-        title="Visit one of our ongoing projects or speak with our sales team today."
-        description="Whether you want an apartment, a plot, or a commercial space, our team will help you shortlist the right fit across our portfolio."
+        eyebrow="Looking for your next home in India or Dubai?"
+        title="Visit one of our ongoing Indian projects or browse our Dubai property portfolio today."
+        description="Whether you want an apartment, a plot, or a commercial space in India — or premium property we sell across Dubai — our team will help you shortlist and close with confidence."
         buttonLabel="Go To Contact Page"
       />
       <FooterSection />

@@ -31,8 +31,8 @@ function ContactInfoItem({ icon, title, lines, accentClass }) {
 export default function ContactSection({
   className = "",
   title = "Get in touch",
-  description = "Talk to our sales team about residential apartments, plotted developments, commercial spaces, and integrated townships in your preferred location.",
-  officeLines = ["Idgah Hills", "Bhopal, Madhya Pradesh"],
+  description = "Talk to our sales team about residential apartments, plotted developments, commercial spaces, and integrated townships in India — or premium property we sell across Dubai.",
+  officeLines = ["India: Idgah Hills, Bhopal, Madhya Pradesh", "Dubai: Business Bay, Dubai, UAE"],
   emailLines = ["info@rationalrealestate.in", "sales@rationalrealestate.in"],
   phoneLines = ["Phone : +91 91652 27984", "Alt : +91 93290 22013"],
   socialLinks = defaultSocialLinks,
@@ -53,7 +53,7 @@ export default function ContactSection({
               <div className="mt-10 space-y-8">
                 <ContactInfoItem
                   icon={MapPin}
-                  title="Head Office"
+                  title="Our Offices"
                   lines={officeLines}
                   accentClass="bg-gradient-to-br from-[#123f72] to-[#2d5f95]"
                 />

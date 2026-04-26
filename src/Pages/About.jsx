@@ -27,10 +27,11 @@ export default function About() {
                 A Trusted Name In Residential And Commercial Development
               </h1>
               <p className="mt-5 text-size-15 leading-7 text-[#d8e3f6]">
-                Rational Real Estate brings over 20 years of development experience —
-                delivering premium apartments, plotted townships, and commercial
-                projects built on clear titles, strong engineering, and a reputation
-                for on-time possession across every market we serve.
+                Rational Real Estate brings over 20 years of development experience
+                across India and Dubai — delivering premium apartments, plotted
+                townships, and commercial projects in India, and selling premium
+                property across Dubai with the same clear titles, strong
+                engineering, and on-time possession we are known for.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <a
@@ -50,8 +51,8 @@ export default function About() {
                 {[
                   { stat: "20+ Years", label: "Of real estate development experience" },
                   { stat: "1,000+", label: "Happy families living in our homes" },
-                  { stat: "9 Verticals", label: "Residential, commercial, plots & more" },
-                  { stat: "Multi-City", label: "Building across growing markets" },
+                  { stat: "10 Verticals", label: "Residential, commercial, plots, Dubai sales & more" },
+                  { stat: "India + Dubai", label: "Active across both markets" },
                 ].map(({ stat, label }) => (
                   <div key={stat} className="flex items-start gap-4 rounded-[16px] border border-white/10 bg-white/6 px-4 py-4">
                     <div className="min-w-[90px] text-size-18 font-semibold text-white">{stat}</div>
@@ -79,12 +80,14 @@ export default function About() {
                 Our Presence
               </p>
               <h2 className="mt-3 text-size-30 font-semibold tracking-[-0.03em] text-[#172033] sm:text-size-38">
-                On-ground development with deep local market expertise
+                On-ground expertise across India and Dubai
               </h2>
               <p className="mt-4 text-size-15 leading-7 text-[#5e6778]">
-                From land acquisition to possession, our in-house teams manage every
-                stage of a project — ensuring quality construction, transparent
-                documentation, and a smooth buying experience for every homeowner.
+                From land acquisition and on-time possession in India to a
+                hand-picked Dubai inventory we sell directly, our in-house teams
+                manage every stage of a transaction — ensuring quality
+                construction, transparent documentation, and a smooth
+                experience for every buyer across both markets.
               </p>
             </div>
           </div>

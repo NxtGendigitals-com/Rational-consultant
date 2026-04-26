@@ -32,14 +32,20 @@ export default function ContactHeroOverlaySection({
             </h2>
             <p className="mt-4 max-w-[420px] text-size-15 leading-7 text-[#dbe6f8]">
               Connect with Rational Real Estate for apartments, plots,
-              commercial spaces, and integrated townships.
+              commercial spaces, and integrated townships in India — or premium
+              property we sell across Dubai.
             </p>
 
             <div className="mt-8 space-y-4">
               <InfoItem
                 icon={MapPin}
-                title="Office"
+                title="India Office"
                 value="Idgah Hills, Bhopal, Madhya Pradesh"
+              />
+              <InfoItem
+                icon={MapPin}
+                title="Dubai Office"
+                value="Business Bay, Dubai, UAE"
               />
               <InfoItem
                 icon={Mail}

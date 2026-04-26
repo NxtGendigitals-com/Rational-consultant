@@ -44,8 +44,8 @@ export default function WhyChooseUs() {
               </h1>
               <p className="mt-5 text-size-15 leading-7 text-[#d8e3f6]">
                 We combine strong construction, transparent paperwork, thoughtful
-                design, and long-term customer care — so every buyer moves into
-                their home with complete confidence.
+                design, and long-term customer care — across India and Dubai —
+                so every buyer and seller moves forward with complete confidence.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <a

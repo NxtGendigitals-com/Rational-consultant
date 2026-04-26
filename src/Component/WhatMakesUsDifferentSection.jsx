@@ -52,7 +52,7 @@ export default function WhatMakesUsDifferentSection({
                 Customer Satisfaction Rate
               </p>
               <p className="mt-4 text-size-14 leading-7 text-[#dbe6f8]">
-                Trusted by homeowners and investors across every market for
+                Trusted by homeowners and investors across India and Dubai for
                 quality construction, transparent dealings, and on-time delivery.
               </p>
             </div>

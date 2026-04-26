@@ -22,7 +22,7 @@ export default function AboutPageFeatureSection({
   className = "",
   eyebrow = "Why Choose Rational",
   title = "Quality-first development at every stage of your home-buying journey.",
-  description = "We build for end-users, investors, and businesses who want a home or workspace backed by transparent documentation, strong construction, and a developer that honours its commitments.",
+  description = "We build for end-users, investors, and businesses across India who want a home or workspace backed by transparent documentation and strong construction — and we sell a curated portfolio of premium property across Dubai with the same commitment to clarity and execution.",
   imageSrc = "https://images.unsplash.com/photo-1451976426598-a7593bd6d0b2?auto=format&fit=crop&w=1200&q=80",
   imageAlt = "Modern real estate development",
   features = defaultFeatures,

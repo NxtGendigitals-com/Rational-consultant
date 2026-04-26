@@ -55,8 +55,8 @@ function ProjectCard({ title, count, image, size = "small" }) {
 export default function ProjectSection({
   className = "",
   titleStart = "1000+ Homes Delivered",
-  titleHighlight = "Across Growing Markets",
-  description = "From premium apartments and plotted communities to commercial showrooms — our portfolio delivers quality construction, on-time possession, and clear-title ownership.",
+  titleHighlight = "Across India & Dubai",
+  description = "From premium apartments and plotted communities to commercial showrooms in India and premium property we sell across Dubai — our portfolio delivers quality construction, on-time possession, and clear-title ownership.",
   buttonLabel = "Our Projects",
   buttonHref = "/services",
   projects = defaultProjects,
